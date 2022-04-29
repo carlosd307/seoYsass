@@ -1,0 +1,941 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--------------------Iniciosmartphone-----mobileFirts--------------------------------------------------*/
+/*inicioMediaQueries*/
+@media (max-width : 475px)
+{
+ /*inicioBody*/
+ 
+ .bodyIndex{
+    width: 95%;
+    height: 100vh;
+    background-image: url(../img/bodyPhone.jpeg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+ /*estructuraConGrid*/
+ #gridAreas{
+  display: grid;
+    grid-template-areas:"menu cabeza lateral"
+    "menu cabeza lateral"
+     "hero hero lateral"
+     "hero hero lateral"
+     "carrusel carrusel carrusel"
+     "carrusel carrusel carrusel"
+     "carrusel carrusel carrusel"
+     "carrusel carrusel carrusel"
+     "pie pie pie";
+     ;grid-template-columns: 25% 50% 20%;
+     ;grid-template-rows: 1fr 2fr 2fr 1fr 1r 3fr 3fr 1fr 1fr;
+
+     /*header*/
+     header{
+        grid-area: cabeza;
+       }
+/*inicioMenuNavegacion*/
+    nav{
+        grid-area: menu;
+    }
+        .menu{
+            display: flex;
+            flex-direction: row;
+          align-items: flex-start;
+          .menuNav ul li a {
+            display: block;
+        text-decoration: none;
+           }
+           .menuNav li:hover:before {
+            width: 100%;
+            } 
+            .menuNav ul li::before {
+                content:"";
+                height: 6px;
+                width:0%;
+                background: #E2A405;
+                position: absolute;
+                left: 0;
+                transition: 0.4s ease-out;
+                   }
+                 }
+                  /*finNav*/
+/*inicioContenido*/
+#hero{
+    grid-area: hero;
+width: 100%;
+height: 80%;
+/*tituloIndex*/
+.heroTitle {
+    width: 80%;
+    color: #4D4D4D;;
+    text-transform: uppercase;
+   position: relative;
+   left: 25%;
+   font-size: 35px; 
+}
+
+.heroSubtitle {
+    width: 80%;
+     color: #4D4D4D;;
+    position: relative;
+    left: 25%;
+    font-size: 15px;
+     }
+ }
+/*finContenido*/
+/*inicioLateral*/
+aside{
+    grid-area: lateral;
+    .logoMarcas{
+        width: 60%;
+    }
+    .LogodeMcarcas{
+        width:50px;
+        height: 50px;
+        padding: 5px;
+    }
+     .userCarrito{
+        display: flex;
+        flex-direction: row;
+        padding-left: 40px;
+    }  
+}
+/*finLateral*/
+/*inicioCarrusel*/
+.carrusel{
+    grid-area: carrusel;
+background-color: whitesmoke;
+
+width: 116%;
+height: 800px;
+margin-top: 100%;
+#carouselExampleControls{
+    margin-left: 8px;
+    margin-top: 10%;
+    margin-bottom: 3%;
+        }
+    .heroTitleCarruSmarphone{
+        width: 100%;
+        font-size: 30px;
+        padding-top:10%;
+        padding-left: 35px;
+    }
+    .heroSubtitleCarruSmarphone{
+    padding-left: 40px;
+    }
+    }
+/*finCarrusel*/
+/*inicioNewsletter*/
+.newsletter{
+    position: relative;
+    text-align: center;
+    .formEmailindex input {
+        margin-top:65px;
+        width: 65%;
+        border-color: transparent;
+      border-bottom: 1px solid #E2A405;
+       }
+    .botonsuscribir{
+         margin-top:25px;
+         width: 60%;
+     }
+   }
+/*finNewsletter*/
+/*inicioFooter*/
+ footer {
+    grid-area: pie;
+    background-color: #E2A405;
+    color:  #4D4D4D;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+}
+ /*finFooter*/
+}
+/*finBodyIndex*/
+/*-----------------------------------------shopPages&ServiciosSmartphone--------------------------------------------**/
+.bodyPages{
+    width: 100%;
+    height: 150vh;
+    background-color: whitesmoke;
+/*inicioContenido*/
+#hero {
+    grid-area: hero;
+    padding-top: 35%;
+    .btn{
+        background-color: #E2A405;
+        font-size: 14px;
+        color: black;
+    }
+    .card-img-top{
+    background-color: #dadada;
+    }
+    .titulo{
+        width: 40%;
+        color: #4D4D4D;;
+    text-transform: uppercase;
+    }
+
+/*incioformulario*/
+.solicitud{
+    font-size: 15px;
+}
+.datos{
+    font-size: 10px;
+}
+.tituloServicios{
+padding: 10px;
+margin: 10px; 
+position: relative;
+left: 5px;
+}
+/*inicioF1*/
+.formPadre {
+padding: 5px;
+margin: 5px; 
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+.formNombre {
+padding: 5px;
+margin: 10px;
+}
+.formNombre input{
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+}
+}
+/*finF1*/
+/*inicioF2*/
+.formPadre2{
+    padding: 5px;
+    margin: 5px; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+    .formDni{
+        padding: 5px;
+        margin: 10px;
+    }
+    .formDni input{
+        width: 80%;
+        border-color: transparent;
+        border-bottom: 1px solid #E2A405;
+    }
+    .formTlf {
+        padding: 3px;
+        margin: 8px;
+    }
+    .formTlf input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+    }
+.formPadre3{
+    padding: 5px;
+    margin: 5px; 
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: flex-start;
+}
+.formEmail{
+    padding: 3px;
+    margin: 8px;
+}
+.formEmail input {
+width: 80%;
+border-color: transparent;
+border-bottom: 1px solid #E2A405;
+}
+.formPadre4{
+    padding: 5px;
+    margin: 5px; 
+    width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: flex-start;
+}
+.enviar{
+    width: 100%;
+padding-top: 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+.enviar input {
+    width: 100%;
+ background-color: #E2A405;
+ width: 120px;
+ height: 25px;
+}
+}
+/*finFormulario*/
+/*finContenido*/
+ /*incioLateral*/
+   aside {
+    grid-area: lateral;
+     width: 100%;
+     .userCarritoPages{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .logoMarcasYBusqueda{
+        padding-top: 40%;
+    }
+    .busquedaBuscar{
+        width: 170px;
+        height: 35px;
+        position: relative;
+        right: 180px;
+    }
+    .botonBuscar{
+        width: 70px;
+        height: 35px;
+        position: relative;
+        right: 185px;
+    }
+    .marcasPadre{
+        padding-top: 10px;
+        position: relative;
+        right: 50px;
+        .LogodeMcarcasPages{
+            width: 25px;
+        }
+    }
+     .carritoUser{
+         display: flex;
+         flex-direction: row;
+         }
+         }
+     /*finLateral*/
+    }
+    /*finBodyPages/*
+/*finMediaQueriesSmarphone*/
+}
+/*-------------------------------------------tablet-----------------------------------------------------*/
+/*inicioMediaQueriesTablet*/
+@media ( min-width :476px) and ( max-width :990px) 
+{
+
+/*inicioBody*/
+.bodyIndex{
+    width: 100%;
+    height: 100vh;
+    background-image:url(../img/homemoto.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*estructuracongrid*/
+#gridAreas{
+    display: grid;
+       grid-template-areas:" menu cabeza lateral"
+        "menu cabeza lateral"
+        "hero hero lateral"
+        "hero hero lateral"
+        "hero hero lateral"
+        "carrusel carrusel carrusel"
+        "carrusel carrusel carrusel"
+        "pie pie pie";
+        ;grid-template-columns: 30% 50% 30%;
+        ;grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
+/*inicioHeader*/
+   header{
+    grid-area: cabeza;
+   position: relative;
+   left: 10%;
+}
+ /*inicioMenuNavegacion*/
+   nav{
+    grid-area: menu;
+    /*inicioMenu*/
+    .menu{
+        margin-left: 35%;
+        display: flex;
+        flex-direction: row;
+      align-items: flex-start;   
+      .menuNav ul li a {
+        display: block;
+    text-decoration: none;
+       }
+       .menuNav li:hover:before {
+        width: 100%;
+    }
+    .menuNav ul li::before {
+        content:"";
+        height: 6px;
+        width:0%;
+        background: #E2A405;
+        position: absolute;
+        left: 0;
+        transition: 0.4s ease-out;
+    }
+}
+/*finMenu*/
+    }
+/*finMenuNavegacion*/
+ /*incioContenido*/
+ #hero{
+    grid-area: hero;
+width: 100%;
+height: 900px;
+   /*tituloIndex*/
+   .heroTitle {
+    width: 50%;
+    color: #4D4D4D;;
+    text-transform: uppercase;
+   position: relative;
+   left: 13%;
+   top: 8%;
+}
+.heroSubtitle {
+    width: 50%;
+     color: #4D4D4D;;
+    position: relative;
+    left: 13%;
+    top: 8%;     
+}
+}
+/*finContenido*/
+/*inicioLaterales*/
+   aside{
+    grid-area: lateral;
+    .Marcasindex{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .logoMarcas{
+        padding-top: 13%;
+       }
+    .LogodeMcarcas{
+        width:50px;
+        height: 50px;
+        padding: 5px;
+    }
+}
+/*finLaterales*/
+   /*inicioCarrusel*/
+ .carrusel{
+        grid-area: carrusel;
+        background-color: whitesmoke;
+        width: 100%;
+        height: 1500px;
+       
+        #carouselExampleControls{
+        margin-left: 10px;
+        margin-top: 5%;
+        margin-bottom: 3%;
+            }
+            .heroTitleCarru{
+                width: 100%;
+                font-size: 30px;
+                padding-top:2%;
+                padding-left: 50px;
+                .heroSubtitleCarru{
+                    padding-left: 80px;
+                     }
+                    }
+                }
+                /*finCarrusel*/
+                /*inicioNewsletter*/
+                .newsletter{position: relative;
+                    text-align: center;
+                    .formEmailindex input {
+                        margin-top:65px;
+                        width: 40%;
+                        border-color: transparent;
+                         border-bottom: 1px solid #E2A405;
+                        }
+                        .botonsuscribir{
+                            margin-top:25px;
+                            width: 20%;
+                        }
+                    }
+                    /*inicioNewsletter*/
+     /*inicoFooter*/
+     footer {
+        grid-area: pie;
+        background-color: #E2A405;
+        color:  #4D4D4D;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        position: fixed;
+        bottom: 0;
+    }
+    /*finFooter*/
+   }
+/*------------------------------------shop-Pages-ServiciosTablet--------------------------------**/
+/*inicoBodyPages*/
+.bodyPages{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+ /*inicioLaterales*/
+    aside{
+        grid-area: lateral;
+        width: 100%;
+        height: 100%;
+     /*userCarrito*/
+     .userCarritoPages{
+        display: flex;
+        flex-direction: row;
+      justify-content: center;
+    }
+    /*iniciomarcasYBusqueda*/
+    .LogodeMcarcasPages{
+        width: 30px;
+    }
+    .logoMarcasYBusqueda{
+            padding-top: 10%;
+            position: relative;
+            right: 15%;
+            .buscar{
+                width: 67%;
+                height: 10%;
+            }
+        }
+        .marcasPadre{
+                width: 40%;
+                height: 100%;
+                position: relative;
+                right: 40%;
+                .imgMarcas{
+                    position: relative;
+                    right: 100%;
+                    bottom: 40px;
+                }
+            }
+        }
+     /*finLateral/*
+   /*inicioContenido*/
+   #hero {
+        grid-area: hero;
+    padding-top: 100px;
+    .btn{
+        background-color: #E2A405;
+        font-size: 14px;
+        color: black;
+    }
+    .card-img-top{
+        background-color: #dadada;
+    }
+    .tituloServicios{
+        position: relative;
+        left: 3%;
+    }
+    /*tituloPages*/
+    .tituloPages{
+        width: 30%;
+        font-size: 25px;
+        color: #4D4D4D;;
+        text-transform: uppercase;
+        position: relative;
+        padding: 15px;
+        margin: 10px;
+    }
+/*formulario*/
+.formPadre {
+    padding: 10px;
+    margin: 10px; 
+    width: 100%;
+    height: 505;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+.formNombre {
+    width: 30%;
+}
+.formNombre input {
+    width: 80%;
+   border-color: transparent;
+ border-bottom: 1px solid #E2A405;
+}
+.formPadre2{
+    padding: 10px;
+    margin: 10px; 
+    width: 100%;
+    height: 505;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: flex-start;
+}
+.formDni{
+    width: 30%;
+}
+
+.formDni {
+    width: 30%;
+}
+.formDni input {
+    width: 80%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+   
+ }
+.formEmail{
+    width: 30%;
+}
+.formEmail input {
+    width: 80%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+   }
+.formTlf {
+    width: 30%;
+}
+ .formTlf input {
+    width: 80%;
+    border-color: transparent;
+  border-bottom: 1px solid #E2A405;
+}
+.formPadre3{
+    padding: 10px;
+    margin: 10px; 
+    width: 100%;
+    height: 505;
+    display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: flex-start;
+}
+.enviar{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .enviar input {
+     background-color: #E2A405;
+     width: 20%;
+     height: 25px;
+    }
+}
+ /*finFormulario*/
+  }
+  /*finBodyPages*/
+}
+/*finMediaTablet*/
+
+/*-----------------------------------desktop-----------------------------------------------------------*/
+@media (min-width: 992px)
+{
+    /*inicioBody*/
+    .bodyIndex {
+      width: 90%;
+      height: 150vh;
+      background-image: url(../img/homemoto.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  
+    /*estructuracongrid*/
+    #gridAreas {
+      display: grid;
+      grid-template-areas: "cabeza menu lateral" "cabeza menu lateral" "hero hero lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
+      grid-template-columns: 30% 50% 30%;
+      grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
+   /*header*/
+   header {
+      grid-area: cabeza;
+      position: relative;
+      left: 10%;
+    }
+    /*menuNavegacion*/
+    nav {
+      grid-area: menu;
+    }
+    .menu {
+      margin-left: 35%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .menuNav ul li a {
+      display: block;
+      text-decoration: none;
+    }
+    .menuNav li:hover:before {
+      width: 100%;
+    }
+    .menuNav ul li::before {
+      content: "";
+      height: 6px;
+      width: 0%;
+      background: #E2A405;
+      position: absolute;
+      left: 0;
+      transition: 0.4s ease-out;
+    }
+    /*finMenuNavegacion*/
+    /*incioContenido*/
+    #hero {
+      grid-area: hero;
+      width: 100%;
+      height: 900px;
+    }
+    /*tituloIndex*/
+    .heroTitle {
+      width: 50%;
+      color: #4D4D4D;
+      text-transform: uppercase;
+      position: relative;
+      left: 13%;
+      top: 8%;
+    }
+    .heroSubtitle {
+      width: 50%;
+      color: #4D4D4D;
+      position: relative;
+      left: 13%;
+      top: 8%;
+    }
+    /*inicioLaterales*/
+    aside {
+      grid-area: lateral;
+    }
+    .Marcasindex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+    .logoMarcas {
+      padding-top: 13%;
+    }
+    .LogodeMcarcas {
+      width: 50px;
+      height: 50px;
+      padding: 5px;
+    }
+    /*finContenido*/
+    /*iniciocarrusel*/
+    .heroTitleCarru {
+      width: 100%;
+      font-size: 30px;
+      padding-top: 2%;
+      padding-left: 60px;
+    }
+    .heroSubtitleCarru {
+      padding-left: 80px;
+    }
+    .carrusel {
+      grid-area: carrusel;
+      background-color: whitesmoke;
+      width: 100%;
+      height: 1500px;
+    }
+    #carouselExampleControls {
+      margin-left: 20px;
+      margin-top: 5%;
+      margin-bottom: 3%;
+    }
+     /*finCarrusel*/
+    /*inicioNewsletter*/
+    .newsletter {
+      position: relative;
+      text-align: center;}
+      .formEmailindex input {
+      margin-top: 65px;
+      width: 40%;
+      border-color: transparent;
+      border-bottom: 1px solid #E2A405;
+    }
+    .botonsuscribir {
+      margin-top: 25px;
+      width: 20%;
+      background-color: #E2A405;
+    }
+    /*finNewsletter*/
+    /*footer*/
+    footer {
+      grid-area: pie;
+      background-color: #E2A405;
+      color: #4D4D4D;
+      text-align: center;
+      width: 100%;
+      height: 10%;
+      position: fixed;
+      bottom: 0;
+    }
+}/*-----------------------------------------shopPages----pagesServicios-----------------------------------**/
+    /*body*/
+    .bodyPages {
+      width: 100%;
+      height: 100vh;
+      background-color: whitesmoke;
+  /*contenido*/
+    #hero {
+      grid-area: hero;
+      padding-top: 100px;
+      .btn {
+        background-color: #E2A405;
+        font-size: 14px;
+        color: black;
+      }
+      .card-img-top {
+        background-color: #dadada;
+        .card-img-top{
+          width: 150px; height: 150px;
+        }
+    }
+    .tituloServicios {
+      position: relative;
+      left: 3%;
+    }
+    /*titulo*/
+    .tituloPages {
+      width: 30%;
+      font-size: 25px;
+      color: #4D4D4D;
+      text-transform: uppercase;
+      position: relative;
+      padding: 15px;
+      margin: 10px;
+    }
+    /*formulario*/
+    .formPadre {
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      height: 505;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .formNombre {
+      width: 30%;
+    }
+    .formNombre input {
+      width: 80%;
+      border-color: transparent;
+      border-bottom: 1px solid #E2A405;
+    }
+    .formPadre2 {
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      height: 505;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+    .formDni {
+      width: 30%;
+    }
+    .formDni {
+      width: 30%;
+    }
+    .formDni input {
+      width: 80%;
+      border-color: transparent;
+      border-bottom: 1px solid #E2A405;
+    }
+    .formEmail {
+      width: 30%;
+    }
+    .formEmail input {
+     width: 80%;
+      border-color: transparent;
+      border-bottom: 1px solid #E2A405;
+    }
+    .formTlf {
+      width: 30%;
+    }
+    .formTlf input {
+      width: 80%;
+      border-color: transparent;
+      border-bottom: 1px solid #E2A405;
+    }
+    .formPadre3 {
+      padding: 10px;
+      margin: 10px;
+      width: 100%;
+      height: 505;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+    .enviar {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .enviar input {
+      background-color: #E2A405;
+      width: 20%;
+      height: 25px;
+    }
+}
+/*finFormulario*/
+/*inicioLaterales*/
+    aside {
+      grid-area: lateral;
+      width: 100%;
+      height: 100%;
+            .container {
+                width: 97%;
+                    }
+    
+            .buscar {
+                width: 67%;
+                    height: 10%;
+                }
+       /*marcasYBusqueda*/
+    .LogodeMcarcasPages {
+      width: 30px;
+    }
+    .marcasPadre {
+      width: 40%;
+      height: 100%;
+      position: relative;
+      right: 48px;
+    }
+    .logoMarcasYBusqueda {
+      padding-top: 12%;
+      position: relative;
+      right: 30px;
+    }
+    .imgMarcas {
+      position: relative;
+      right: 100%;
+      bottom: 40px;
+    }
+    /*iconoWs*/
+    .iconoWs {
+      width: 45px;
+      position: fixed;
+      left: 95%;
+      top: 89%;
+    }
+  }
+   /*finLaterales*/
+}
+/*finBodyPages*/
+}
+/*finmediaQueriesDesktop*/

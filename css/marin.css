@@ -1,0 +1,921 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/*--------------------Iniciosmartphone-----mobileFirts--------------------------------------------------*/
+/*inicioMediaQueries*/
+@media (max-width: 475px) {
+  /*inicioBody*/
+  .bodyIndex {
+    width: 95%;
+    height: 100vh;
+    background-image: url(../img/bodyPhone.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /*estructuraConGrid*/
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "menu cabeza lateral" "menu cabeza lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
+    grid-template-columns: 25% 50% 20%;
+    grid-template-rows: 1fr 2fr 2fr 1fr 1r 3fr 3fr 1fr 1fr;
+    /*header*/
+    /*inicioMenuNavegacion*/
+    /*finNav*/
+    /*inicioContenido*/
+    /*finContenido*/
+    /*inicioLateral*/
+    /*finLateral*/
+    /*inicioCarrusel*/
+    /*finCarrusel*/
+    /*inicioNewsletter*/
+    /*finNewsletter*/
+    /*inicioFooter*/
+    /*finFooter*/
+  }
+  #gridAreas header {
+    grid-area: cabeza;
+  }
+  #gridAreas nav {
+    grid-area: menu;
+  }
+  #gridAreas .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #gridAreas .menu .menuNav ul li a {
+    display: block;
+    text-decoration: none;
+  }
+  #gridAreas .menu .menuNav li:hover:before {
+    width: 100%;
+  }
+  #gridAreas .menu .menuNav ul li::before {
+    content: "";
+    height: 6px;
+    width: 0%;
+    background: #E2A405;
+    position: absolute;
+    left: 0;
+    transition: 0.4s ease-out;
+  }
+  #gridAreas #hero {
+    grid-area: hero;
+    width: 100%;
+    height: 80%;
+    /*tituloIndex*/
+  }
+  #gridAreas #hero .heroTitle {
+    width: 80%;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    position: relative;
+    left: 25%;
+    font-size: 35px;
+  }
+  #gridAreas #hero .heroSubtitle {
+    width: 80%;
+    color: #4D4D4D;
+    position: relative;
+    left: 25%;
+    font-size: 15px;
+  }
+  #gridAreas aside {
+    grid-area: lateral;
+  }
+  #gridAreas aside .logoMarcas {
+    width: 60%;
+  }
+  #gridAreas aside .LogodeMcarcas {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
+  #gridAreas aside .userCarrito {
+    display: flex;
+    flex-direction: row;
+    padding-left: 40px;
+  }
+  #gridAreas .carrusel {
+    grid-area: carrusel;
+    background-color: whitesmoke;
+    width: 116%;
+    height: 800px;
+    margin-top: 100%;
+  }
+  #gridAreas .carrusel #carouselExampleControls {
+    margin-left: 8px;
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+  #gridAreas .carrusel .heroTitleCarruSmarphone {
+    width: 100%;
+    font-size: 30px;
+    padding-top: 10%;
+    padding-left: 35px;
+  }
+  #gridAreas .carrusel .heroSubtitleCarruSmarphone {
+    padding-left: 40px;
+  }
+  #gridAreas .newsletter {
+    position: relative;
+    text-align: center;
+  }
+  #gridAreas .newsletter .formEmailindex input {
+    margin-top: 65px;
+    width: 65%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  #gridAreas .newsletter .botonsuscribir {
+    margin-top: 25px;
+    width: 60%;
+  }
+  #gridAreas footer {
+    grid-area: pie;
+    background-color: #E2A405;
+    color: #4D4D4D;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  /*finBodyIndex*/
+  /*-----------------------------------------shopPages&ServiciosSmartphone--------------------------------------------**/
+  .bodyPages {
+    width: 100%;
+    height: 150vh;
+    background-color: whitesmoke;
+    /*inicioContenido*/
+    /*finFormulario*/
+    /*finContenido*/
+    /*incioLateral*/
+    /*finLateral*/
+  }
+  .bodyPages #hero {
+    grid-area: hero;
+    padding-top: 35%;
+    /*incioformulario*/
+    /*inicioF1*/
+    /*finF1*/
+    /*inicioF2*/
+  }
+  .bodyPages #hero .btn {
+    background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+  }
+  .bodyPages #hero .card-img-top {
+    background-color: #dadada;
+  }
+  .bodyPages #hero .titulo {
+    width: 40%;
+    color: #4D4D4D;
+    text-transform: uppercase;
+  }
+  .bodyPages #hero .solicitud {
+    font-size: 15px;
+  }
+  .bodyPages #hero .datos {
+    font-size: 10px;
+  }
+  .bodyPages #hero .tituloServicios {
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    left: 5px;
+  }
+  .bodyPages #hero .formPadre {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .formPadre .formNombre {
+    padding: 5px;
+    margin: 10px;
+  }
+  .bodyPages #hero .formPadre .formNombre input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formPadre2 {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .formDni {
+    padding: 5px;
+    margin: 10px;
+  }
+  .bodyPages #hero .formDni input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formTlf {
+    padding: 3px;
+    margin: 8px;
+  }
+  .bodyPages #hero .formTlf input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formPadre3 {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .formEmail {
+    padding: 3px;
+    margin: 8px;
+  }
+  .bodyPages #hero .formEmail input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formPadre4 {
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .enviar {
+    width: 100%;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bodyPages #hero .enviar input {
+    width: 100%;
+    background-color: #E2A405;
+    width: 120px;
+    height: 25px;
+  }
+  .bodyPages aside {
+    grid-area: lateral;
+    width: 100%;
+  }
+  .bodyPages aside .userCarritoPages {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .bodyPages aside .logoMarcasYBusqueda {
+    padding-top: 40%;
+  }
+  .bodyPages aside .busquedaBuscar {
+    width: 170px;
+    height: 35px;
+    position: relative;
+    right: 180px;
+  }
+  .bodyPages aside .botonBuscar {
+    width: 70px;
+    height: 35px;
+    position: relative;
+    right: 185px;
+  }
+  .bodyPages aside .marcasPadre {
+    padding-top: 10px;
+    position: relative;
+    right: 50px;
+  }
+  .bodyPages aside .marcasPadre .LogodeMcarcasPages {
+    width: 25px;
+  }
+  .bodyPages aside .carritoUser {
+    display: flex;
+    flex-direction: row;
+  }
+
+  /*finBodyPages/*
+  /*finMediaQueriesSmarphone*/
+}
+/*-------------------------------------------tablet-----------------------s------------------------------*/
+/*inicioMediaQueriesTablet*/
+@media (min-width: 476px) and (max-width: 1023px) {
+  /*inicioBody*/
+  .bodyIndex {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/homemoto.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /*estructuracongrid*/
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "cabeza menu lateral" "cabeza menu lateral" "hero hero lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
+    grid-template-columns: 30% 50% 30%;
+    grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
+    /*inicioHeader*/
+    /*inicioMenuNavegacion*/
+    /*finMenuNavegacion*/
+    /*incioContenido*/
+    /*finContenido*/
+    /*inicioLaterales*/
+    /*finLaterales*/
+    /*inicioCarrusel*/
+    /*finCarrusel*/
+    /*inicioNewsletter*/
+    /*inicioNewsletter*/
+    /*inicoFooter*/
+    /*finFooter*/
+  }
+  #gridAreas header {
+    grid-area: cabeza;
+    position: relative;
+    left: 10%;
+  }
+  #gridAreas nav {
+    grid-area: menu;
+    /*inicioMenu*/
+    /*finMenu*/
+  }
+  #gridAreas nav .menu {
+    margin-left: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #gridAreas nav .menu .menuNav ul li a {
+    display: block;
+    text-decoration: none;
+  }
+  #gridAreas nav .menu .menuNav li:hover:before {
+    width: 100%;
+  }
+  #gridAreas nav .menu .menuNav ul li::before {
+    content: "";
+    height: 6px;
+    width: 0%;
+    background: #E2A405;
+    position: absolute;
+    left: 0;
+    transition: 0.4s ease-out;
+  }
+  #gridAreas #hero {
+    grid-area: hero;
+    width: 100%;
+    height: 900px;
+    /*tituloIndex*/
+  }
+  #gridAreas #hero .heroTitle {
+    width: 50%;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    position: relative;
+    left: 13%;
+    top: 8%;
+  }
+  #gridAreas #hero .heroSubtitle {
+    width: 50%;
+    color: #4D4D4D;
+    position: relative;
+    left: 13%;
+    top: 8%;
+  }
+  #gridAreas aside {
+    grid-area: lateral;
+  }
+  #gridAreas aside .Marcasindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  #gridAreas aside .logoMarcas {
+    padding-top: 13%;
+  }
+  #gridAreas aside .LogodeMcarcas {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
+  #gridAreas .carrusel {
+    grid-area: carrusel;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 1500px;
+  }
+  #gridAreas .carrusel #carouselExampleControls {
+    margin-left: 10px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+  #gridAreas .carrusel .heroTitleCarru {
+    width: 100%;
+    font-size: 30px;
+    padding-top: 2%;
+    padding-left: 50px;
+  }
+  #gridAreas .carrusel .heroTitleCarru .heroSubtitleCarru {
+    padding-left: 80px;
+  }
+  #gridAreas .newsletter {
+    position: relative;
+    text-align: center;
+  }
+  #gridAreas .newsletter .formEmailindex input {
+    margin-top: 65px;
+    width: 40%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  #gridAreas .newsletter .botonsuscribir {
+    margin-top: 25px;
+    width: 20%;
+  }
+  #gridAreas footer {
+    grid-area: pie;
+    background-color: #E2A405;
+    color: #4D4D4D;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  /*------------------------------------shop-Pages-ServiciosTablet--------------------------------**/
+  /*inicoBodyPages*/
+  .bodyPages {
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    /*inicioLaterales*/
+    /*finLateral/*
+    /*inicioContenido*/
+    /*finFormulario*/
+  }
+  .bodyPages aside {
+    grid-area: lateral;
+    width: 100%;
+    height: 100%;
+    /*userCarrito*/
+    /*iniciomarcasYBusqueda*/
+  }
+  .bodyPages aside .userCarritoPages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .bodyPages aside .LogodeMcarcasPages {
+    width: 30px;
+  }
+  .bodyPages aside .logoMarcasYBusqueda {
+    padding-top: 10%;
+    position: relative;
+    right: 15%;
+  }
+  .bodyPages aside .logoMarcasYBusqueda .buscar {
+    width: 67%;
+    height: 10%;
+  }
+  .bodyPages aside .marcasPadre {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    right: 40%;
+  }
+  .bodyPages aside .marcasPadre .imgMarcas {
+    position: relative;
+    right: 100%;
+    bottom: 40px;
+  }
+  .bodyPages #hero {
+    grid-area: hero;
+    padding-top: 100px;
+    /*tituloPages*/
+    /*formulario*/
+  }
+  .bodyPages #hero .btn {
+    background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+  }
+  .bodyPages #hero .card-img-top {
+    background-color: #dadada;
+  }
+  .bodyPages #hero .tituloServicios {
+    position: relative;
+    left: 3%;
+  }
+  .bodyPages #hero .tituloPages {
+    width: 30%;
+    font-size: 25px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    position: relative;
+    padding: 15px;
+    margin: 10px;
+  }
+  .bodyPages #hero .formPadre {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 505;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .formNombre {
+    width: 30%;
+  }
+  .bodyPages #hero .formNombre input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formPadre2 {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 505;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .formDni {
+    width: 30%;
+  }
+  .bodyPages #hero .formDni {
+    width: 30%;
+  }
+  .bodyPages #hero .formDni input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formEmail {
+    width: 30%;
+  }
+  .bodyPages #hero .formEmail input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formTlf {
+    width: 30%;
+  }
+  .bodyPages #hero .formTlf input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formPadre3 {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 505;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .enviar {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bodyPages #hero .enviar input {
+    background-color: #E2A405;
+    width: 20%;
+    height: 25px;
+  }
+
+  /*finBodyPages*/
+}
+/*finMediaTablet*/
+/*-----------------------------------desktop-----------------------------------------------------------*/
+@media (min-width: 1024px) {
+  /*inicioBody*/
+  .bodyIndex {
+    width: 90%;
+    height: 150vh;
+    background-image: url(../img/homemoto.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  /*estructuracongrid*/
+  #gridAreas {
+    display: grid;
+    grid-template-areas: "cabeza menu lateral" "cabeza menu lateral" "hero hero lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
+    grid-template-columns: 30% 50% 30%;
+    grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
+    /*header*/
+    /*menuNavegacion*/
+    /*finMenuNavegacion*/
+    /*incioContenido*/
+    /*tituloIndex*/
+    /*inicioLaterales*/
+    /*finContenido*/
+    /*iniciocarrusel*/
+    /*finCarrusel*/
+    /*inicioNewsletter*/
+    /*finNewsletter*/
+    /*footer*/
+  }
+  #gridAreas header {
+    grid-area: cabeza;
+    position: relative;
+    left: 10%;
+  }
+  #gridAreas nav {
+    grid-area: menu;
+  }
+  #gridAreas .menu {
+    margin-left: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #gridAreas .menuNav ul li a {
+    display: block;
+    text-decoration: none;
+  }
+  #gridAreas .menuNav li:hover:before {
+    width: 100%;
+  }
+  #gridAreas .menuNav ul li::before {
+    content: "";
+    height: 6px;
+    width: 0%;
+    background: #E2A405;
+    position: absolute;
+    left: 0;
+    transition: 0.4s ease-out;
+  }
+  #gridAreas #hero {
+    grid-area: hero;
+    width: 100%;
+    height: 900px;
+  }
+  #gridAreas .heroTitle {
+    width: 50%;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    position: relative;
+    left: 13%;
+    top: 8%;
+  }
+  #gridAreas .heroSubtitle {
+    width: 50%;
+    color: #4D4D4D;
+    position: relative;
+    left: 13%;
+    top: 8%;
+  }
+  #gridAreas aside {
+    grid-area: lateral;
+  }
+  #gridAreas .Marcasindex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  #gridAreas .logoMarcas {
+    padding-top: 13%;
+  }
+  #gridAreas .LogodeMcarcas {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
+  #gridAreas .heroTitleCarru {
+    width: 100%;
+    font-size: 30px;
+    padding-top: 2%;
+    padding-left: 60px;
+  }
+  #gridAreas .heroSubtitleCarru {
+    padding-left: 80px;
+  }
+  #gridAreas .carrusel {
+    grid-area: carrusel;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 1500px;
+  }
+  #gridAreas #carouselExampleControls {
+    margin-left: 20px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+  #gridAreas .newsletter {
+    position: relative;
+    text-align: center;
+  }
+  #gridAreas .formEmailindex input {
+    margin-top: 65px;
+    width: 40%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  #gridAreas .botonsuscribir {
+    margin-top: 25px;
+    width: 20%;
+    background-color: #E2A405;
+  }
+  #gridAreas footer {
+    grid-area: pie;
+    background-color: #E2A405;
+    color: #4D4D4D;
+    text-align: center;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  /*-----------------------------------------shopPages----pagesServicios-----------------------------------**/
+  /*body*/
+  .bodyPages {
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    /*contenido*/
+    /*finFormulario*/
+    /*inicioLaterales*/
+    /*finLaterales*/
+  }
+  .bodyPages #hero {
+    grid-area: hero;
+    padding-top: 100px;
+    /*titulo*/
+    /*formulario*/
+  }
+  .bodyPages #hero .btn {
+    background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+  }
+  .bodyPages #hero .card-img-top {
+    background-color: #dadada;
+  }
+  .bodyPages #hero .tituloServicios {
+    position: relative;
+    left: 3%;
+  }
+  .bodyPages #hero .tituloPages {
+    width: 30%;
+    font-size: 25px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+    position: relative;
+    padding: 15px;
+    margin: 10px;
+  }
+  .bodyPages #hero .formPadre {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 505;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .formNombre {
+    width: 30%;
+  }
+  .bodyPages #hero .formNombre input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formPadre2 {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 505;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .formDni {
+    width: 30%;
+  }
+  .bodyPages #hero .formDni {
+    width: 30%;
+  }
+  .bodyPages #hero .formDni input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formEmail {
+    width: 30%;
+  }
+  .bodyPages #hero .formEmail input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formTlf {
+    width: 30%;
+  }
+  .bodyPages #hero .formTlf input {
+    width: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+  }
+  .bodyPages #hero .formPadre3 {
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    height: 505;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .enviar {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bodyPages #hero .enviar input {
+    background-color: #E2A405;
+    width: 20%;
+    height: 25px;
+  }
+  .bodyPages aside {
+    grid-area: lateral;
+    width: 100%;
+    height: 100%;
+    /*marcasYBusqueda*/
+    /*iconoWs*/
+  }
+  .bodyPages aside .container {
+    width: 97%;
+  }
+  .bodyPages aside .buscar {
+    width: 67%;
+    height: 10%;
+  }
+  .bodyPages aside .LogodeMcarcasPages {
+    width: 30px;
+  }
+  .bodyPages aside .marcasPadre {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    right: 48%;
+  }
+  .bodyPages aside .logoMarcasYBusqueda {
+    padding-top: 12%;
+    position: relative;
+    right: 30%;
+  }
+  .bodyPages aside .imgMarcas {
+    position: relative;
+    right: 100%;
+    bottom: 40px;
+  }
+  .bodyPages aside .iconoWs {
+    width: 45px;
+    position: fixed;
+    left: 95%;
+    top: 89%;
+  }
+
+  /*finBodyPages*/
+}
+/*finmediaQueriesDesktop*/
+
+/*# sourceMappingURL=marin.css.map */
