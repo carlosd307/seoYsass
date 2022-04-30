@@ -4,7 +4,15 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*--------------------Iniciosmartphone-----mobileFirts--------------------------------------------------*/
+/*--------------
+variablesDeColor
+----------------*/
+/*--------------
+    mixin
+----------------*/
+/*------------------------------------------------------------------------------------------------------------
+                                           mobileFirts Iniciosmartphone
+-------------------------------------------------------------------------------------------------------------*/
 /*inicioMediaQueries*/
 @media (max-width: 475px) {
   /*inicioBody*/
@@ -54,6 +62,7 @@
   }
   #gridAreas .menu .menuNav li:hover:before {
     width: 100%;
+    height: 1%;
   }
   #gridAreas .menu .menuNav ul li::before {
     content: "";
@@ -72,6 +81,7 @@
   }
   #gridAreas #hero .heroTitle {
     width: 80%;
+    height: 65%;
     color: #4D4D4D;
     text-transform: uppercase;
     position: relative;
@@ -80,6 +90,7 @@
   }
   #gridAreas #hero .heroSubtitle {
     width: 80%;
+    height: 80%;
     color: #4D4D4D;
     position: relative;
     left: 25%;
@@ -90,6 +101,7 @@
   }
   #gridAreas aside .logoMarcas {
     width: 60%;
+    height: 60%;
   }
   #gridAreas aside .LogodeMcarcas {
     width: 50px;
@@ -115,6 +127,7 @@
   }
   #gridAreas .carrusel .heroTitleCarruSmarphone {
     width: 100%;
+    height: 100%;
     font-size: 30px;
     padding-top: 10%;
     padding-left: 35px;
@@ -127,14 +140,19 @@
     text-align: center;
   }
   #gridAreas .newsletter .formEmailindex input {
-    margin-top: 65px;
     width: 65%;
+    height: 60%;
+    margin-top: 65px;
     border-color: transparent;
+    background-color: whitesmoke;
     border-bottom: 1px solid #E2A405;
   }
   #gridAreas .newsletter .botonsuscribir {
+    width: 65%;
+    height: 60%;
     margin-top: 25px;
-    width: 60%;
+    background-color: #E2A405;
+    border-color: #dadada;
   }
   #gridAreas footer {
     grid-area: pie;
@@ -146,16 +164,23 @@
     position: fixed;
     bottom: 0;
   }
+  #gridAreas footer .redes {
+    padding-top: 20px;
+  }
 
   /*finBodyIndex*/
-  /*-----------------------------------------shopPages&ServiciosSmartphone--------------------------------------------**/
+  /*-----------------------------
+  shopPages&ServiciosSmartphone-
+  ------------------------------**/
   .bodyPages {
     width: 100%;
     height: 150vh;
     background-color: whitesmoke;
     /*inicioContenido*/
-    /*finFormulario*/
-    /*finContenido*/
+    /*------------------
+        finFormulario
+        finContenido
+    -------------------*/
     /*incioLateral*/
     /*finLateral*/
   }
@@ -177,6 +202,7 @@
   }
   .bodyPages #hero .titulo {
     width: 40%;
+    height: 40%;
     color: #4D4D4D;
     text-transform: uppercase;
   }
@@ -193,9 +219,10 @@
     left: 5px;
   }
   .bodyPages #hero .formPadre {
+    width: 100%;
+    height: 100%;
     padding: 5px;
     margin: 5px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -207,13 +234,16 @@
   }
   .bodyPages #hero .formPadre .formNombre input {
     width: 80%;
+    height: 80%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formPadre2 {
+    width: 100%;
+    height: 100%;
     padding: 5px;
     margin: 5px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -222,25 +252,34 @@
   .bodyPages #hero .formDni {
     padding: 5px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
   }
   .bodyPages #hero .formDni input {
     width: 80%;
+    height: 80%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formTlf {
     padding: 3px;
     margin: 8px;
+    display: flex;
+    flex-direction: column;
   }
   .bodyPages #hero .formTlf input {
     width: 80%;
+    height: 80%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formPadre3 {
+    width: 100%;
+    height: 100%;
     padding: 5px;
     margin: 5px;
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -252,8 +291,10 @@
   }
   .bodyPages #hero .formEmail input {
     width: 80%;
+    height: 80%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formPadre4 {
     padding: 5px;
@@ -266,20 +307,16 @@
   }
   .bodyPages #hero .enviar {
     width: 100%;
-    padding-top: 40px;
+    height: 100%;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .bodyPages #hero .enviar input {
-    width: 100%;
-    background-color: #E2A405;
-    width: 120px;
-    height: 25px;
-  }
   .bodyPages aside {
     grid-area: lateral;
     width: 100%;
+    height: 100%;
   }
   .bodyPages aside .userCarritoPages {
     padding-left: 20px;
@@ -293,12 +330,15 @@
     height: 35px;
     position: relative;
     right: 180px;
+    background-color: whitesmoke;
+    border-color: #4D4D4D;
   }
   .bodyPages aside .botonBuscar {
     width: 70px;
     height: 35px;
     position: relative;
     right: 185px;
+    background-color: #E2A405;
   }
   .bodyPages aside .marcasPadre {
     padding-top: 10px;
@@ -307,6 +347,7 @@
   }
   .bodyPages aside .marcasPadre .LogodeMcarcasPages {
     width: 25px;
+    height: 25px;
   }
   .bodyPages aside .carritoUser {
     display: flex;
@@ -316,7 +357,9 @@
   /*finBodyPages/*
   /*finMediaQueriesSmarphone*/
 }
-/*-------------------------------------------tablet-----------------------------------------------------*/
+/*-------------------------------------------------------------------------
+                                    tablet
+--------------------------------------------------------------------------*/
 /*inicioMediaQueriesTablet*/
 @media (min-width: 476px) and (max-width: 990px) {
   /*inicioBody*/
@@ -342,10 +385,10 @@
     /*finContenido*/
     /*inicioLaterales*/
     /*finLaterales*/
-    /*inicioCarrusel*/
+    /*iniciocarrusel*/
     /*finCarrusel*/
     /*inicioNewsletter*/
-    /*inicioNewsletter*/
+    /*finNewsletter*/
     /*inicoFooter*/
     /*finFooter*/
   }
@@ -371,6 +414,7 @@
   }
   #gridAreas nav .menu .menuNav li:hover:before {
     width: 100%;
+    height: 100%;
   }
   #gridAreas nav .menu .menuNav ul li::before {
     content: "";
@@ -384,11 +428,12 @@
   #gridAreas #hero {
     grid-area: hero;
     width: 100%;
-    height: 900px;
+    height: 600px;
     /*tituloIndex*/
   }
   #gridAreas #hero .heroTitle {
     width: 50%;
+    height: 15%;
     color: #4D4D4D;
     text-transform: uppercase;
     position: relative;
@@ -397,6 +442,7 @@
   }
   #gridAreas #hero .heroSubtitle {
     width: 50%;
+    height: 10%;
     color: #4D4D4D;
     position: relative;
     left: 13%;
@@ -419,56 +465,66 @@
     height: 50px;
     padding: 5px;
   }
-  #gridAreas .carrusel {
-    grid-area: carrusel;
-    background-color: whitesmoke;
+  #gridAreas .heroTitleCarru {
     width: 100%;
-    height: 1500px;
-  }
-  #gridAreas .carrusel #carouselExampleControls {
-    margin-left: 10px;
-    margin-top: 5%;
-    margin-bottom: 3%;
-  }
-  #gridAreas .carrusel .heroTitleCarru {
-    width: 100%;
+    height: 10%;
     font-size: 30px;
     padding-top: 2%;
-    padding-left: 50px;
+    padding-left: 60px;
   }
-  #gridAreas .carrusel .heroTitleCarru .heroSubtitleCarru {
+  #gridAreas .heroSubtitleCarru {
     padding-left: 80px;
+  }
+  #gridAreas .carrusel {
+    grid-area: carrusel;
+    width: 100%;
+    height: 1500px;
+    background-color: whitesmoke;
+  }
+  #gridAreas #carouselExampleControls {
+    margin-left: 20px;
+    margin-top: 5%;
+    margin-bottom: 3%;
   }
   #gridAreas .newsletter {
     position: relative;
     text-align: center;
   }
-  #gridAreas .newsletter .formEmailindex input {
+  #gridAreas .formEmailindex input {
+    width: 30%;
+    height: 10%;
     margin-top: 65px;
-    width: 40%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
-  #gridAreas .newsletter .botonsuscribir {
-    margin-top: 25px;
+  #gridAreas .botonsuscribir {
     width: 20%;
+    height: 10%;
+    margin-top: 25px;
+    background-color: #E2A405;
   }
   #gridAreas footer {
+    width: 100%;
+    height: 10%;
     grid-area: pie;
     background-color: #E2A405;
     color: #4D4D4D;
     text-align: center;
-    width: 100%;
-    height: 10%;
     position: fixed;
     bottom: 0;
   }
+  #gridAreas footer .redes {
+    padding-top: 20px;
+  }
 
-  /*------------------------------------shop-Pages-ServiciosTablet--------------------------------**/
+  /*----------------------------------------------------------------------------------------
+                                    shop-Pages-ServiciosTablet
+  ---------------------------------------------------------------------------------------**/
   /*inicoBodyPages*/
   .bodyPages {
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background-color: whitesmoke;
     /*inicioLaterales*/
     /*finLateral/*
@@ -489,16 +545,25 @@
   }
   .bodyPages aside .LogodeMcarcasPages {
     width: 30px;
+    height: 30px;
   }
   .bodyPages aside .logoMarcasYBusqueda {
     padding-top: 10%;
     padding-left: 10px;
     position: relative;
     right: 30%;
+    background-color: whitesmoke;
   }
   .bodyPages aside .logoMarcasYBusqueda .buscar {
-    width: 67%;
+    width: 70%;
     height: 10%;
+  }
+  .bodyPages aside .logoMarcasYBusqueda .buscar .busquedaBuscar {
+    background-color: whitesmoke;
+    border-color: #4D4D4D;
+  }
+  .bodyPages aside .logoMarcasYBusqueda .buscar .botonBuscar {
+    background-color: #E2A405;
   }
   .bodyPages aside .marcasPadre {
     width: 40%;
@@ -526,9 +591,9 @@
     color: black;
   }
   .bodyPages #hero .card-img-top {
-    background-color: #dadada;
     width: 100%;
     height: 120px;
+    background-color: #dadada;
   }
   .bodyPages #hero .tituloServicios {
     position: relative;
@@ -544,10 +609,10 @@
     margin: 10px;
   }
   .bodyPages #hero .formPadre {
+    width: 100%;
+    height: 50%;
     padding: 10px;
     margin: 10px;
-    width: 100%;
-    height: 505;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -555,17 +620,20 @@
   }
   .bodyPages #hero .formNombre {
     width: 30%;
+    height: 30%;
   }
   .bodyPages #hero .formNombre input {
     width: 80%;
+    height: 30%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formPadre2 {
+    width: 100%;
+    height: 50%;
     padding: 10px;
     margin: 10px;
-    width: 100%;
-    height: 505;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -573,36 +641,44 @@
   }
   .bodyPages #hero .formDni {
     width: 30%;
-  }
-  .bodyPages #hero .formDni {
-    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
   }
   .bodyPages #hero .formDni input {
     width: 80%;
+    height: 30%;
     border-color: transparent;
-    border-bottom: 1px solid color1;
+    border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formEmail {
     width: 30%;
+    height: 30%;
   }
   .bodyPages #hero .formEmail input {
     width: 80%;
+    height: 30%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formTlf {
     width: 30%;
+    height: 30%;
   }
   .bodyPages #hero .formTlf input {
     width: 80%;
+    height: 30%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formPadre3 {
+    width: 100%;
+    height: 30%;
     padding: 10px;
     margin: 10px;
-    width: 100%;
-    height: 505;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -616,14 +692,16 @@
   }
   .bodyPages #hero .enviar input {
     background-color: #E2A405;
-    width: 20%;
-    height: 25px;
+    width: 30%;
+    height: 30%;
   }
 
   /*finBodyPages*/
 }
 /*finMediaTablet*/
-/*-----------------------------------desktop-----------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------
+                                                       desktop
+---------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 992px) {
   /*inicioBody*/
   .bodyIndex {
@@ -673,12 +751,13 @@
   }
   #gridAreas .menuNav li:hover:before {
     width: 100%;
+    height: 1px;
   }
   #gridAreas .menuNav ul li::before {
     content: "";
     height: 6px;
     width: 0%;
-    background: #E2A405;
+    background-color: #E2A405;
     position: absolute;
     left: 0;
     transition: 0.4s ease-out;
@@ -698,6 +777,7 @@
   }
   #gridAreas .heroSubtitle {
     width: 50%;
+    height: 10%;
     color: #4D4D4D;
     position: relative;
     left: 13%;
@@ -722,6 +802,7 @@
   }
   #gridAreas .heroTitleCarru {
     width: 100%;
+    height: 10%;
     font-size: 30px;
     padding-top: 2%;
     padding-left: 60px;
@@ -730,10 +811,10 @@
     padding-left: 80px;
   }
   #gridAreas .carrusel {
-    grid-area: carrusel;
-    background-color: whitesmoke;
     width: 100%;
     height: 1500px;
+    grid-area: carrusel;
+    background-color: whitesmoke;
   }
   #gridAreas #carouselExampleControls {
     margin-left: 20px;
@@ -745,14 +826,17 @@
     text-align: center;
   }
   #gridAreas .formEmailindex input {
-    margin-top: 65px;
     width: 40%;
+    height: 10%;
+    margin-top: 65px;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   #gridAreas .botonsuscribir {
-    margin-top: 25px;
     width: 20%;
+    height: 10%;
+    margin-top: 25px;
     background-color: #E2A405;
   }
   #gridAreas footer {
@@ -765,8 +849,13 @@
     position: fixed;
     bottom: 0;
   }
+  #gridAreas footer .redes {
+    padding-top: 20px;
+  }
 
-  /*-----------------------------------------shopPages----pagesServicios-----------------------------------**/
+  /*--------------------------------------------------------------------
+                          shopPages----pagesServicios
+  -------------------------------------------------------------------**/
   /*body*/
   .bodyPages {
     width: 100%;
@@ -775,7 +864,8 @@
     /*contenido*/
     /*finFormulario*/
     /*inicioLaterales*/
-    /*finLaterales*/
+    /*finLateral/*
+    /*finBodyPages*/
   }
   .bodyPages #hero {
     grid-area: hero;
@@ -801,6 +891,7 @@
   }
   .bodyPages #hero .tituloPages {
     width: 30%;
+    height: 10%;
     font-size: 25px;
     color: #4D4D4D;
     text-transform: uppercase;
@@ -809,10 +900,10 @@
     margin: 10px;
   }
   .bodyPages #hero .formPadre {
+    width: 100%;
+    height: 50%;
     padding: 10px;
     margin: 10px;
-    width: 100%;
-    height: 505;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -820,17 +911,20 @@
   }
   .bodyPages #hero .formNombre {
     width: 30%;
+    height: 30%;
   }
   .bodyPages #hero .formNombre input {
     width: 80%;
+    height: 30%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formPadre2 {
+    width: 100%;
+    height: 50%;
     padding: 10px;
     margin: 10px;
-    width: 100%;
-    height: 505;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -838,36 +932,44 @@
   }
   .bodyPages #hero .formDni {
     width: 30%;
-  }
-  .bodyPages #hero .formDni {
-    width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
   }
   .bodyPages #hero .formDni input {
     width: 80%;
+    height: 30%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formEmail {
     width: 30%;
+    height: 30%;
   }
   .bodyPages #hero .formEmail input {
     width: 80%;
+    height: 30%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formTlf {
     width: 30%;
+    height: 30%;
   }
   .bodyPages #hero .formTlf input {
     width: 80%;
+    height: 30%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
   }
   .bodyPages #hero .formPadre3 {
+    width: 100%;
+    height: 30%;
     padding: 10px;
     margin: 10px;
-    width: 100%;
-    height: 505;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -881,51 +983,54 @@
   }
   .bodyPages #hero .enviar input {
     background-color: #E2A405;
-    width: 20%;
-    height: 25px;
+    width: 30%;
+    height: 30%;
   }
   .bodyPages aside {
     grid-area: lateral;
     width: 100%;
     height: 100%;
-    /*marcasYBusqueda*/
-    /*iconoWs*/
+    /*userCarrito*/
+    /*iniciomarcasYBusqueda*/
   }
-  .bodyPages aside .container {
-    width: 97%;
-  }
-  .bodyPages aside .buscar {
-    width: 67%;
-    height: 10%;
+  .bodyPages aside .userCarritoPages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .bodyPages aside .LogodeMcarcasPages {
     width: 30px;
+    height: 30px;
+  }
+  .bodyPages aside .logoMarcasYBusqueda {
+    padding-top: 10%;
+    padding-left: 10px;
+    position: relative;
+    right: 30%;
+    background-color: whitesmoke;
+  }
+  .bodyPages aside .logoMarcasYBusqueda .buscar {
+    width: 70%;
+    height: 10%;
+  }
+  .bodyPages aside .logoMarcasYBusqueda .buscar .busquedaBuscar {
+    background-color: whitesmoke;
+    border-color: #4D4D4D;
+  }
+  .bodyPages aside .logoMarcasYBusqueda .buscar .botonBuscar {
+    background-color: #E2A405;
   }
   .bodyPages aside .marcasPadre {
     width: 40%;
     height: 100%;
     position: relative;
-    right: 40%;
+    right: 60%;
   }
-  .bodyPages aside .logoMarcasYBusqueda {
-    padding-top: 12%;
-    padding-left: 2px;
-    position: relative;
-    right: 20%;
-  }
-  .bodyPages aside .imgMarcas {
+  .bodyPages aside .marcasPadre .imgMarcas {
     position: relative;
     right: 100%;
     bottom: 40px;
   }
-  .bodyPages aside .iconoWs {
-    width: 45px;
-    position: fixed;
-    left: 95%;
-    top: 89%;
-  }
-
-  /*finBodyPages*/
 }
 /*finmediaQueriesDesktop*/
 

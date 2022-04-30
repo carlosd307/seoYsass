@@ -4,20 +4,31 @@
     font-family: 'Roboto', sans-serif;
 }
 
-//variables de color//
+/*--------------
+variablesDeColor
+----------------*/
 $color1:#E2A405;
 $color2:#4D4D4D;
 $color3:whitesmoke;
 $color4:#dadada;
-/*--------------------Iniciosmartphone-----mobileFirts--------------------------------------------------*/
+
+/*--------------
+    mixin
+----------------*/
+@mixin tamanio ($alto,$ancho){ 
+  width: $alto;
+  height: $ancho;
+}
+/*------------------------------------------------------------------------------------------------------------
+                                           mobileFirts Iniciosmartphone
+-------------------------------------------------------------------------------------------------------------*/
 /*inicioMediaQueries*/
 @media (max-width : 475px)
 {
  /*inicioBody*/
  
  .bodyIndex{
-    width: 95%;
-    height: 100vh;
+  @include tamanio(95%,100vh);
     background-image: url(../img/bodyPhone.jpeg);
     background-size: cover;
     background-position:center;
@@ -55,7 +66,8 @@ $color4:#dadada;
         text-decoration: none;
            }
            .menuNav li:hover:before {
-            width: 100%;
+            @include tamanio(100%,1%);
+            
             } 
             .menuNav ul li::before {
                 content:"";
@@ -71,11 +83,10 @@ $color4:#dadada;
 /*inicioContenido*/
 #hero{
     grid-area: hero;
-width: 100%;
-height: 80%;
+    @include tamanio(100%, 80%);
 /*tituloIndex*/
 .heroTitle {
-    width: 80%;
+  @include tamanio(80%,65%);
     color: $color2;;
     text-transform: uppercase;
    position: relative;
@@ -84,7 +95,7 @@ height: 80%;
 }
 
 .heroSubtitle {
-    width: 80%;
+  @include tamanio(80%,80%);
      color: $color2;;
     position: relative;
     left: 25%;
@@ -96,11 +107,10 @@ height: 80%;
 aside{
     grid-area: lateral;
     .logoMarcas{
-        width: 60%;
+      @include tamanio(60%,60%);
     }
     .LogodeMcarcas{
-        width:50px;
-        height: 50px;
+      @include tamanio(50px,50px);
         padding: 5px;
     }
      .userCarrito{
@@ -114,9 +124,7 @@ aside{
 .carrusel{
     grid-area: carrusel;
 background-color: $color3;
-
-width: 116%;
-height: 800px;
+@include tamanio(116%,800px);
 margin-top: 100%;
 #carouselExampleControls{
     margin-left: 8px;
@@ -124,7 +132,7 @@ margin-top: 100%;
     margin-bottom: 3%;
         }
     .heroTitleCarruSmarphone{
-        width: 100%;
+      @include tamanio(100%,100%);
         font-size: 30px;
         padding-top:10%;
         padding-left: 35px;
@@ -139,14 +147,18 @@ margin-top: 100%;
     position: relative;
     text-align: center;
     .formEmailindex input {
-        margin-top:65px;
-        width: 65%;
-        border-color: transparent;
+       @include tamanio(65%,60%);
+       margin-top:65px;
+        border-color: transparent,;
+        background-color: $color3;
       border-bottom: 1px solid $color1;
        }
     .botonsuscribir{
+      @include tamanio(65%,60%);
          margin-top:25px;
-         width: 60%;
+         background-color: $color1;
+         border-color: $color4;
+  
      }
    }
 /*finNewsletter*/
@@ -156,19 +168,23 @@ margin-top: 100%;
     background-color:$color1;
     color:  $color2;
     text-align: center;
-    width: 100%;
-    height: 10%;
+    @include tamanio(100%,10%);
     position: fixed;
     bottom: 0;
+    .redes{
+      padding-top: 20px;
+    }
+    
 }
  /*finFooter*/
 }
 /*finBodyIndex*/
-/*-----------------------------------------shopPages&ServiciosSmartphone--------------------------------------------**/
+/*-----------------------------
+shopPages&ServiciosSmartphone-
+------------------------------**/
 .bodyPages{
-    width: 100%;
-    height: 150vh;
-    background-color: $color3;
+  @include tamanio(100%,150vh);
+  background-color: $color3;
 /*inicioContenido*/
 #hero {
     grid-area: hero;
@@ -182,7 +198,7 @@ margin-top: 100%;
     background-color: $color4;
     }
     .titulo{
-        width: 40%;
+      @include tamanio(40%,40%);
         color: $color2;;
     text-transform: uppercase;
     }
@@ -202,9 +218,9 @@ left: 5px;
 }
 /*inicioF1*/
 .formPadre {
+@include tamanio(100%,100%);
 padding: 5px;
 margin: 5px; 
-width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -214,44 +230,52 @@ padding: 5px;
 margin: 10px;
 }
 .formNombre input{
-width: 80%;
+  @include tamanio(80%,80%);
 border-color: transparent;
 border-bottom: 1px solid $color1;
+background-color: $color3;
 }
 }
 /*finF1*/
 /*inicioF2*/
 .formPadre2{
+  @include tamanio(100%,100%);
     padding: 5px;
     margin: 5px; 
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
-    .formDni{
+.formDni{
         padding: 5px;
         margin: 10px;
+        display: flex;
+        flex-direction: column
     }
     .formDni input{
-        width: 80%;
+      @include tamanio(80%,80%);
         border-color: transparent;
         border-bottom: 1px solid $color1;
+        background-color: $color3;
+        
     }
     .formTlf {
         padding: 3px;
         margin: 8px;
+        display: flex;
+        flex-direction: column
     }
     .formTlf input {
-    width: 80%;
-    border-color: transparent;
-    border-bottom: 1px solid $color1;
+      @include tamanio(80%,80%);
+      border-color: transparent;
+      border-bottom: 1px solid $color1;
+      background-color: $color3;
     }
 .formPadre3{
+  @include tamanio(100%,100%);
     padding: 5px;
     margin: 5px; 
-    width: 100%;
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
@@ -262,9 +286,10 @@ align-items: flex-start;
     margin: 8px;
 }
 .formEmail input {
-width: 80%;
-border-color: transparent;
-border-bottom: 1px solid $color1;
+  @include tamanio(80%,80%);
+        border-color: transparent;
+        border-bottom: 1px solid $color1;
+        background-color: $color3;
 }
 .formPadre4{
     padding: 5px;
@@ -276,26 +301,21 @@ justify-content: space-evenly;
 align-items: flex-start;
 }
 .enviar{
-    width: 100%;
-padding-top: 40px;
+@include tamanio(100%,100%);
+padding-top: 50px;
 display: flex;
 flex-direction: column;
 align-items: center;
-
-}
-.enviar input {
-    width: 100%;
- background-color: $color1;
- width: 120px;
- height: 25px;
 }
 }
-/*finFormulario*/
-/*finContenido*/
+/*------------------
+    finFormulario
+    finContenido
+-------------------*/
  /*incioLateral*/
    aside {
     grid-area: lateral;
-     width: 100%;
+    @include tamanio(100%,100%);
      .userCarritoPages{
         padding-left: 20px;
         padding-top: 20px;
@@ -304,23 +324,25 @@ align-items: center;
         padding-top: 40%;
     }
     .busquedaBuscar{
-        width: 170px;
-        height: 35px;
-        position: relative;
-        right: 180px;
+      @include tamanio(170px,35px);
+       position: relative;
+         right: 180px;
+         background-color: $color3;
+         border-color: $color2
+      
     }
     .botonBuscar{
-        width: 70px;
-        height: 35px;
+      @include tamanio(70px,35px);
         position: relative;
-        right: 185px;
+          right: 185px;
+          background-color: $color1;
     }
     .marcasPadre{
         padding-top: 10px;
         position: relative;
         right: 50px;
         .LogodeMcarcasPages{
-            width: 25px;
+          @include tamanio(25px,25px);
         }
     }
      .carritoUser{
@@ -333,15 +355,15 @@ align-items: center;
     /*finBodyPages/*
 /*finMediaQueriesSmarphone*/
 }
-/*-------------------------------------------tablet-----------------------------------------------------*/
+/*-------------------------------------------------------------------------
+                                    tablet
+--------------------------------------------------------------------------*/
 /*inicioMediaQueriesTablet*/
 @media ( min-width :476px) and ( max-width :990px) 
 {
-
 /*inicioBody*/
 .bodyIndex{
-    width: 100%;
-    height: 100vh;
+  @include tamanio(100%,100vh);
     background-image:url(../img/homemoto.jpeg);
     background-size: cover;
     background-position: center;
@@ -380,7 +402,7 @@ align-items: center;
     text-decoration: none;
        }
        .menuNav li:hover:before {
-        width: 100%;
+        @include tamanio(100%,100%);
     }
     .menuNav ul li::before {
         content:"";
@@ -398,11 +420,10 @@ align-items: center;
  /*incioContenido*/
  #hero{
     grid-area: hero;
-width: 100%;
-height: 900px;
-   /*tituloIndex*/
+    @include tamanio(100%,600px);
+ /*tituloIndex*/
    .heroTitle {
-    width: 50%;
+    @include tamanio(50%,15%);
     color: $color2;;
     text-transform: uppercase;
    position: relative;
@@ -410,7 +431,7 @@ height: 900px;
    top: 8%;
 }
 .heroSubtitle {
-    width: 50%;
+  @include tamanio(50%,10%);
      color:$color2;;
     position: relative;
     left: 13%;
@@ -431,74 +452,76 @@ height: 900px;
         padding-top: 13%;
        }
     .LogodeMcarcas{
-        width:50px;
-        height: 50px;
+      @include tamanio(50px,50px);
         padding: 5px;
     }
 }
 /*finLaterales*/
-   /*inicioCarrusel*/
- .carrusel{
-        grid-area: carrusel;
-        background-color: $color3;
-        width: 100%;
-        height: 1500px;
-       
-        #carouselExampleControls{
-        margin-left: 10px;
-        margin-top: 5%;
-        margin-bottom: 3%;
-            }
-            .heroTitleCarru{
-                width: 100%;
-                font-size: 30px;
-                padding-top:2%;
-                padding-left: 50px;
-                .heroSubtitleCarru{
-                    padding-left: 80px;
-                     }
-                    }
-                }
-                /*finCarrusel*/
-                /*inicioNewsletter*/
-                .newsletter{position: relative;
-                    text-align: center;
-                    .formEmailindex input {
-                        margin-top:65px;
-                        width: 40%;
-                        border-color: transparent;
-                         border-bottom: 1px solid $color1;
-                        }
-                        .botonsuscribir{
-                            margin-top:25px;
-                            width: 20%;
-                        }
-                    }
-                    /*inicioNewsletter*/
+   /*iniciocarrusel*/
+   .heroTitleCarru {
+    @include tamanio(100%,10%);
+    font-size: 30px;
+    padding-top: 2%;
+    padding-left: 60px;
+  }
+  .heroSubtitleCarru {
+    padding-left: 80px;
+  }
+  .carrusel {
+    grid-area: carrusel;
+    @include tamanio(100%,1500px);
+    background-color: $color3;
+  }
+  #carouselExampleControls {
+    margin-left: 20px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+   /*finCarrusel*/
+  /*inicioNewsletter*/
+  .newsletter {
+    position: relative;
+    text-align: center;}
+    .formEmailindex input {
+      @include tamanio(30%,10%);
+    margin-top: 65px;
+    border-color: transparent;
+    border-bottom: 1px solid $color1;
+    background-color: $color3;
+  }
+  .botonsuscribir {
+    @include tamanio(20%,10%);
+    margin-top: 25px;
+   background-color: $color1;
+  }
+  /*finNewsletter*/
      /*inicoFooter*/
      footer {
+      @include tamanio(100%,10%);
         grid-area: pie;
         background-color: $color1;
         color:  $color2;
         text-align: center;
-        width: 100%;
-        height: 10%;
-        position: fixed;
+       position: fixed;
         bottom: 0;
+        .redes{
+          padding-top: 20px;
+        }
     }
+    
     /*finFooter*/
    }
-/*------------------------------------shop-Pages-ServiciosTablet--------------------------------**/
+/*----------------------------------------------------------------------------------------
+                                  shop-Pages-ServiciosTablet
+---------------------------------------------------------------------------------------**/
 /*inicoBodyPages*/
 .bodyPages{
-    width: 100%;
-    height: 100vh;
+  @include tamanio(100%,150vh);
     background-color:$color3;
  /*inicioLaterales*/
     aside{
         grid-area: lateral;
-        width: 100%;
-        height: 100%;
+        @include tamanio(100%,100%);
      /*userCarrito*/
      .userCarritoPages{
         display: flex;
@@ -507,21 +530,28 @@ height: 900px;
     }
     /*iniciomarcasYBusqueda*/
     .LogodeMcarcasPages{
-        width: 30px;
+      @include tamanio(30px,30px);
     }
     .logoMarcasYBusqueda{
             padding-top: 10%;
             padding-left: 10px;
             position: relative;
             right: 30%;
+            background-color: $color3;
             .buscar{
-                width: 67%;
-                height: 10%;
+                  @include tamanio(70%,10%);
+                  .busquedaBuscar{
+                  background-color: $color3;
+                    border-color: $color2;
+                  }
+                  .botonBuscar{
+                    background-color: $color1;
+                      }
+                  
+                }
             }
-        }
         .marcasPadre{
-                width: 40%;
-                height: 100%;
+          @include tamanio(40%,100%);
                 position: relative;
                 right: 60%;
                 .imgMarcas{
@@ -547,8 +577,9 @@ height: 900px;
         color: black;
     }
     .card-img-top{
+      @include tamanio(100%,120px);
         background-color:$color4;
-        width: 100%; height: 120px;
+      
     }
     .tituloServicios{
         position: relative;
@@ -566,68 +597,71 @@ height: 900px;
     }
 /*formulario*/
 .formPadre {
+  @include tamanio(100%,50%);
     padding: 10px;
     margin: 10px; 
-    width: 100%;
-    height: 505;
-    display: flex;
+   display: flex;
    flex-direction: row;
    justify-content: space-around;
    align-items: flex-start;
+   
 }
 .formNombre {
-    width: 30%;
+  @include tamanio(30%,30%);
+  
 }
 .formNombre input {
-    width: 80%;
+  @include tamanio(80%,30%);
    border-color: transparent;
  border-bottom: 1px solid $color1;
+ background-color: $color3;
 }
 .formPadre2{
+  @include tamanio(100%,50%);
     padding: 10px;
     margin: 10px; 
-    width: 100%;
-    height: 505;
-    display: flex;
+  display: flex;
    flex-direction: row;
    justify-content: space-around;
    align-items: flex-start;
 }
 .formDni{
-    width: 30%;
+  @include tamanio(30%,30%);
+  display: flex;
+        flex-direction: column
+ 
 }
 
-.formDni {
-    width: 30%;
-}
 .formDni input {
-    width: 80%;
+  @include tamanio(80%,30%);
     border-color: transparent;
-  border-bottom: 1px solid color1;
+  border-bottom: 1px solid $color1;
+  background-color: $color3;
    
  }
 .formEmail{
-    width: 30%;
+  @include tamanio(30%,30%);
 }
 .formEmail input {
-    width: 80%;
+  @include tamanio(80%,30%);
     border-color: transparent;
   border-bottom: 1px solid $color1;
+  background-color: $color3;
    }
 .formTlf {
-    width: 30%;
+  @include tamanio(30%,30%);
 }
  .formTlf input {
-    width: 80%;
+  @include tamanio(80%,30%);
     border-color: transparent;
   border-bottom: 1px solid $color1;
+  background-color: $color3;
 }
 .formPadre3{
+  @include tamanio(100%,30%);
     padding: 10px;
     margin: 10px; 
-    width: 100%;
-    height: 505;
-    display: flex;
+   display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    align-items: flex-start;
@@ -640,8 +674,7 @@ height: 900px;
 }
  .enviar input {
      background-color: $color1;
-     width: 20%;
-     height: 25px;
+     @include tamanio(30%,30%);
     }
 }
  /*finFormulario*/
@@ -650,13 +683,14 @@ height: 900px;
 }
 /*finMediaTablet*/
 
-/*-----------------------------------desktop-----------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------
+                                                       desktop
+---------------------------------------------------------------------------------------------------------------*/
 @media (min-width: 992px)
 {
     /*inicioBody*/
     .bodyIndex {
-      width: 90%;
-      height: 150vh;
+      @include tamanio(90%,150vh);
       background-image: url(../img/homemoto.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
@@ -687,16 +721,19 @@ height: 900px;
     .menuNav ul li a {
       display: block;
       text-decoration: none;
+      
     }
     .menuNav li:hover:before {
-      width: 100%;
+      @include tamanio(100%,1px);
+      
+      
     }
     .menuNav ul li::before {
       content: "";
       height: 6px;
       width: 0%;
-      background: $color1;
-      position: absolute;
+     background-color: $color1;
+     position: absolute;
       left: 0;
       transition: 0.4s ease-out;
     }
@@ -704,8 +741,8 @@ height: 900px;
     /*incioContenido*/
     #hero {
       grid-area: hero;
-      width: 100%;
-      height: 900px;
+      @include tamanio(100%,900px);
+   
     }
     /*tituloIndex*/
     .heroTitle {
@@ -717,7 +754,7 @@ height: 900px;
       top: 8%;
     }
     .heroSubtitle {
-      width: 50%;
+      @include tamanio(50%,10%);
       color: $color2;
       position: relative;
       left: 13%;
@@ -737,14 +774,13 @@ height: 900px;
       padding-top: 13%;
     }
     .LogodeMcarcas {
-      width: 50px;
-      height: 50px;
+      @include tamanio(50px,50px);
       padding: 5px;
     }
     /*finContenido*/
     /*iniciocarrusel*/
     .heroTitleCarru {
-      width: 100%;
+      @include tamanio(100%,10%);
       font-size: 30px;
       padding-top: 2%;
       padding-left: 60px;
@@ -753,10 +789,9 @@ height: 900px;
       padding-left: 80px;
     }
     .carrusel {
+      @include tamanio(100%,1500px);
       grid-area: carrusel;
       background-color: $color3;
-      width: 100%;
-      height: 1500px;
     }
     #carouselExampleControls {
       margin-left: 20px;
@@ -769,14 +804,15 @@ height: 900px;
       position: relative;
       text-align: center;}
       .formEmailindex input {
+        @include tamanio(40%,10%);
       margin-top: 65px;
-      width: 40%;
       border-color: transparent;
       border-bottom: 1px solid $color1;
-    }
+      background-color: $color3;
+     }
     .botonsuscribir {
+      @include tamanio(20%,10%);
       margin-top: 25px;
-      width: 20%;
       background-color: $color1;
     }
     /*finNewsletter*/
@@ -790,20 +826,25 @@ height: 900px;
       height: 10%;
       position: fixed;
       bottom: 0;
+      .redes{
+        padding-top: 20px;
+      }
     }
-}/*-----------------------------------------shopPages----pagesServicios-----------------------------------**/
+}
+/*--------------------------------------------------------------------
+                        shopPages----pagesServicios
+-------------------------------------------------------------------**/
     /*body*/
     .bodyPages {
-      width: 100%;
-      height: 100vh;
+      @include tamanio(100%,100vh);
       background-color: $color3;
   /*contenido*/
     #hero {
       grid-area: hero;
       padding-top: 100px;
       .card-img-top{
-        width: 100%; height: 130px;
-      }
+        @include tamanio(100%,130px);
+       }
       .btn {
         background-color: $color1;
         font-size: 14px;
@@ -819,7 +860,7 @@ height: 900px;
     }
     /*titulo*/
     .tituloPages {
-      width: 30%;
+      @include tamanio(30%,10%);
       font-size: 25px;
       color: $color2;
       text-transform: uppercase;
@@ -829,127 +870,135 @@ height: 900px;
     }
     /*formulario*/
     .formPadre {
-      padding: 10px;
-      margin: 10px;
-      width: 100%;
-      height: 505;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-start;
+      @include tamanio(100%,50%);
+        padding: 10px;
+        margin: 10px; 
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: flex-start;
+       
     }
     .formNombre {
-      width: 30%;
+      @include tamanio(30%,30%);
+      
     }
     .formNombre input {
-      width: 80%;
-      border-color: transparent;
-      border-bottom: 1px solid $color1;
+      @include tamanio(80%,30%);
+       border-color: transparent;
+     border-bottom: 1px solid $color1;
+     background-color: $color3;
     }
-    .formPadre2 {
-      padding: 10px;
-      margin: 10px;
-      width: 100%;
-      height: 505;
+    .formPadre2{
+      @include tamanio(100%,50%);
+        padding: 10px;
+        margin: 10px; 
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-start;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: flex-start;
     }
-    .formDni {
-      width: 30%;
+    .formDni{
+      @include tamanio(30%,30%);
+      display: flex;
+            flex-direction: column
+     
     }
-    .formDni {
-      width: 30%;
-    }
+    
     .formDni input {
-      width: 80%;
-      border-color: transparent;
+      @include tamanio(80%,30%);
+        border-color: transparent;
       border-bottom: 1px solid $color1;
-    }
-    .formEmail {
-      width: 30%;
+      background-color: $color3;
+       
+     }
+    .formEmail{
+      @include tamanio(30%,30%);
     }
     .formEmail input {
-     width: 80%;
-      border-color: transparent;
+      @include tamanio(80%,30%);
+        border-color: transparent;
       border-bottom: 1px solid $color1;
-    }
+      background-color: $color3;
+       }
     .formTlf {
-      width: 30%;
+      @include tamanio(30%,30%);
     }
-    .formTlf input {
-      width: 80%;
-      border-color: transparent;
+     .formTlf input {
+      @include tamanio(80%,30%);
+        border-color: transparent;
       border-bottom: 1px solid $color1;
+      background-color: $color3;
     }
-    .formPadre3 {
-      padding: 10px;
-      margin: 10px;
-      width: 100%;
-      height: 505;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      align-items: flex-start;
+    .formPadre3{
+      @include tamanio(100%,30%);
+        padding: 10px;
+        margin: 10px; 
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+       align-items: flex-start;
     }
-    .enviar {
-      padding-top: 50px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    .enviar{
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .enviar input {
-      background-color: $color1;
-      width: 20%;
-      height: 25px;
-    }
+     .enviar input {
+         background-color: $color1;
+         @include tamanio(30%,30%);
+        }
 }
 /*finFormulario*/
-/*inicioLaterales*/
-    aside {
-      grid-area: lateral;
-      width: 100%;
-      height: 100%;
-            .container {
-                width: 97%;
-                    }
-    
-            .buscar {
-                width: 67%;
-                    height: 10%;
+
+ /*inicioLaterales*/
+    aside{
+        grid-area: lateral;
+        @include tamanio(100%,100%);
+     /*userCarrito*/
+     .userCarritoPages{
+        display: flex;
+        flex-direction: row;
+      justify-content: center;
+    }
+    /*iniciomarcasYBusqueda*/
+    .LogodeMcarcasPages{
+      @include tamanio(30px,30px);
+    }
+    .logoMarcasYBusqueda{
+            padding-top: 10%;
+            padding-left: 10px;
+            position: relative;
+            right: 30%;
+            background-color: $color3;
+            .buscar{
+                  @include tamanio(70%,10%);
+                  .busquedaBuscar{
+                  background-color: $color3;
+                    border-color: $color2;
+                  }
+                  .botonBuscar{
+                    background-color: $color1;
+                      }
+                  
                 }
-       /*marcasYBusqueda*/
-    .LogodeMcarcasPages {
-      width: 30px;
-    }
-    .marcasPadre {
-      width: 40%;
-      height: 100%;
-      position: relative;
-      right: 40%;
-    }
-    .logoMarcasYBusqueda {
-      padding-top: 12%;
-      padding-left: 2px;
-      position: relative;
-      right: 20%;
-    }
-    .imgMarcas {
-      position: relative;
-      right: 100%;
-      bottom: 40px;
-    }
-    /*iconoWs*/
-    .iconoWs {
-      width: 45px;
-      position: fixed;
-      left: 95%;
-      top: 89%;
-    }
-  }
-   /*finLaterales*/
-}
+            }
+        .marcasPadre{
+          @include tamanio(40%,100%);
+                position: relative;
+                right: 60%;
+                .imgMarcas{
+                    position: relative;
+                    right: 100%;
+                    bottom: 40px;
+                }
+            }
+        }
+     /*finLateral/*
 /*finBodyPages*/
+}
+
+
 }
 /*finmediaQueriesDesktop*/
