@@ -580,7 +580,7 @@
   .bodyPages #hero .formDni input {
     width: 80%;
     border-color: transparent;
-    border-bottom: 1px solid #E2A405;
+    border-bottom: 1px solid color1;
   }
   .bodyPages #hero .formEmail {
     width: 30%;

@@ -4,6 +4,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+//variables de color//
+$color1:#E2A405;
+$color2:#4D4D4D;
+$color3:whitesmoke;
+$color4:#dadada;
 /*--------------------Iniciosmartphone-----mobileFirts--------------------------------------------------*/
 /*inicioMediaQueries*/
 @media (max-width : 475px)
@@ -56,7 +61,7 @@
                 content:"";
                 height: 6px;
                 width:0%;
-                background: #E2A405;
+                background: $color1;
                 position: absolute;
                 left: 0;
                 transition: 0.4s ease-out;
@@ -71,7 +76,7 @@ height: 80%;
 /*tituloIndex*/
 .heroTitle {
     width: 80%;
-    color: #4D4D4D;;
+    color: $color2;;
     text-transform: uppercase;
    position: relative;
    left: 25%;
@@ -80,7 +85,7 @@ height: 80%;
 
 .heroSubtitle {
     width: 80%;
-     color: #4D4D4D;;
+     color: $color2;;
     position: relative;
     left: 25%;
     font-size: 15px;
@@ -108,7 +113,7 @@ aside{
 /*inicioCarrusel*/
 .carrusel{
     grid-area: carrusel;
-background-color: whitesmoke;
+background-color: $color3;
 
 width: 116%;
 height: 800px;
@@ -137,7 +142,7 @@ margin-top: 100%;
         margin-top:65px;
         width: 65%;
         border-color: transparent;
-      border-bottom: 1px solid #E2A405;
+      border-bottom: 1px solid $color1;
        }
     .botonsuscribir{
          margin-top:25px;
@@ -148,8 +153,8 @@ margin-top: 100%;
 /*inicioFooter*/
  footer {
     grid-area: pie;
-    background-color: #E2A405;
-    color:  #4D4D4D;
+    background-color:$color1;
+    color:  $color2;
     text-align: center;
     width: 100%;
     height: 10%;
@@ -163,22 +168,22 @@ margin-top: 100%;
 .bodyPages{
     width: 100%;
     height: 150vh;
-    background-color: whitesmoke;
+    background-color: $color3;
 /*inicioContenido*/
 #hero {
     grid-area: hero;
     padding-top: 35%;
     .btn{
-        background-color: #E2A405;
+        background-color: $color1;
         font-size: 14px;
         color: black;
     }
     .card-img-top{
-    background-color: #dadada;
+    background-color: $color4;
     }
     .titulo{
         width: 40%;
-        color: #4D4D4D;;
+        color: $color2;;
     text-transform: uppercase;
     }
 
@@ -211,7 +216,7 @@ margin: 10px;
 .formNombre input{
 width: 80%;
 border-color: transparent;
-border-bottom: 1px solid #E2A405;
+border-bottom: 1px solid $color1;
 }
 }
 /*finF1*/
@@ -232,7 +237,7 @@ border-bottom: 1px solid #E2A405;
     .formDni input{
         width: 80%;
         border-color: transparent;
-        border-bottom: 1px solid #E2A405;
+        border-bottom: 1px solid $color1;
     }
     .formTlf {
         padding: 3px;
@@ -241,7 +246,7 @@ border-bottom: 1px solid #E2A405;
     .formTlf input {
     width: 80%;
     border-color: transparent;
-    border-bottom: 1px solid #E2A405;
+    border-bottom: 1px solid $color1;
     }
 .formPadre3{
     padding: 5px;
@@ -259,7 +264,7 @@ align-items: flex-start;
 .formEmail input {
 width: 80%;
 border-color: transparent;
-border-bottom: 1px solid #E2A405;
+border-bottom: 1px solid $color1;
 }
 .formPadre4{
     padding: 5px;
@@ -280,7 +285,7 @@ align-items: center;
 }
 .enviar input {
     width: 100%;
- background-color: #E2A405;
+ background-color: $color1;
  width: 120px;
  height: 25px;
 }
@@ -381,7 +386,7 @@ align-items: center;
         content:"";
         height: 6px;
         width:0%;
-        background: #E2A405;
+        background: $color1;
         position: absolute;
         left: 0;
         transition: 0.4s ease-out;
@@ -398,7 +403,7 @@ height: 900px;
    /*tituloIndex*/
    .heroTitle {
     width: 50%;
-    color: #4D4D4D;;
+    color: $color2;;
     text-transform: uppercase;
    position: relative;
    left: 13%;
@@ -406,7 +411,7 @@ height: 900px;
 }
 .heroSubtitle {
     width: 50%;
-     color: #4D4D4D;;
+     color:$color2;;
     position: relative;
     left: 13%;
     top: 8%;     
@@ -435,7 +440,7 @@ height: 900px;
    /*inicioCarrusel*/
  .carrusel{
         grid-area: carrusel;
-        background-color: whitesmoke;
+        background-color: $color3;
         width: 100%;
         height: 1500px;
        
@@ -462,7 +467,7 @@ height: 900px;
                         margin-top:65px;
                         width: 40%;
                         border-color: transparent;
-                         border-bottom: 1px solid #E2A405;
+                         border-bottom: 1px solid $color1;
                         }
                         .botonsuscribir{
                             margin-top:25px;
@@ -473,8 +478,8 @@ height: 900px;
      /*inicoFooter*/
      footer {
         grid-area: pie;
-        background-color: #E2A405;
-        color:  #4D4D4D;
+        background-color: $color1;
+        color:  $color2;
         text-align: center;
         width: 100%;
         height: 10%;
@@ -488,7 +493,7 @@ height: 900px;
 .bodyPages{
     width: 100%;
     height: 100vh;
-    background-color: whitesmoke;
+    background-color:$color3;
  /*inicioLaterales*/
     aside{
         grid-area: lateral;
@@ -537,12 +542,12 @@ height: 900px;
 }
     
     .btn{
-        background-color: #E2A405;
+        background-color: $color1;
         font-size: 14px;
         color: black;
     }
     .card-img-top{
-        background-color: #dadada;
+        background-color:$color4;
         width: 100%; height: 120px;
     }
     .tituloServicios{
@@ -553,7 +558,7 @@ height: 900px;
     .tituloPages{
         width: 30%;
         font-size: 25px;
-        color: #4D4D4D;;
+        color:$color2;;
         text-transform: uppercase;
         position: relative;
         padding: 15px;
@@ -576,7 +581,7 @@ height: 900px;
 .formNombre input {
     width: 80%;
    border-color: transparent;
- border-bottom: 1px solid #E2A405;
+ border-bottom: 1px solid $color1;
 }
 .formPadre2{
     padding: 10px;
@@ -598,7 +603,7 @@ height: 900px;
 .formDni input {
     width: 80%;
     border-color: transparent;
-  border-bottom: 1px solid #E2A405;
+  border-bottom: 1px solid color1;
    
  }
 .formEmail{
@@ -607,7 +612,7 @@ height: 900px;
 .formEmail input {
     width: 80%;
     border-color: transparent;
-  border-bottom: 1px solid #E2A405;
+  border-bottom: 1px solid $color1;
    }
 .formTlf {
     width: 30%;
@@ -615,7 +620,7 @@ height: 900px;
  .formTlf input {
     width: 80%;
     border-color: transparent;
-  border-bottom: 1px solid #E2A405;
+  border-bottom: 1px solid $color1;
 }
 .formPadre3{
     padding: 10px;
@@ -634,7 +639,7 @@ height: 900px;
     align-items: center;
 }
  .enviar input {
-     background-color: #E2A405;
+     background-color: $color1;
      width: 20%;
      height: 25px;
     }
@@ -690,7 +695,7 @@ height: 900px;
       content: "";
       height: 6px;
       width: 0%;
-      background: #E2A405;
+      background: $color1;
       position: absolute;
       left: 0;
       transition: 0.4s ease-out;
@@ -705,7 +710,7 @@ height: 900px;
     /*tituloIndex*/
     .heroTitle {
       width: 50%;
-      color: #4D4D4D;
+      color: $color2;
       text-transform: uppercase;
       position: relative;
       left: 13%;
@@ -713,7 +718,7 @@ height: 900px;
     }
     .heroSubtitle {
       width: 50%;
-      color: #4D4D4D;
+      color: $color2;
       position: relative;
       left: 13%;
       top: 8%;
@@ -749,7 +754,7 @@ height: 900px;
     }
     .carrusel {
       grid-area: carrusel;
-      background-color: whitesmoke;
+      background-color: $color3;
       width: 100%;
       height: 1500px;
     }
@@ -767,19 +772,19 @@ height: 900px;
       margin-top: 65px;
       width: 40%;
       border-color: transparent;
-      border-bottom: 1px solid #E2A405;
+      border-bottom: 1px solid $color1;
     }
     .botonsuscribir {
       margin-top: 25px;
       width: 20%;
-      background-color: #E2A405;
+      background-color: $color1;
     }
     /*finNewsletter*/
     /*footer*/
     footer {
       grid-area: pie;
-      background-color: #E2A405;
-      color: #4D4D4D;
+      background-color:$color1;
+      color: $color2;
       text-align: center;
       width: 100%;
       height: 10%;
@@ -791,7 +796,7 @@ height: 900px;
     .bodyPages {
       width: 100%;
       height: 100vh;
-      background-color: whitesmoke;
+      background-color: $color3;
   /*contenido*/
     #hero {
       grid-area: hero;
@@ -800,12 +805,12 @@ height: 900px;
         width: 100%; height: 130px;
       }
       .btn {
-        background-color: #E2A405;
+        background-color: $color1;
         font-size: 14px;
         color: black;
       }
       .card-img-top {
-        background-color: #dadada;
+        background-color: $color4;
       
     }
     .tituloServicios {
@@ -816,7 +821,7 @@ height: 900px;
     .tituloPages {
       width: 30%;
       font-size: 25px;
-      color: #4D4D4D;
+      color: $color2;
       text-transform: uppercase;
       position: relative;
       padding: 15px;
@@ -839,7 +844,7 @@ height: 900px;
     .formNombre input {
       width: 80%;
       border-color: transparent;
-      border-bottom: 1px solid #E2A405;
+      border-bottom: 1px solid $color1;
     }
     .formPadre2 {
       padding: 10px;
@@ -860,7 +865,7 @@ height: 900px;
     .formDni input {
       width: 80%;
       border-color: transparent;
-      border-bottom: 1px solid #E2A405;
+      border-bottom: 1px solid $color1;
     }
     .formEmail {
       width: 30%;
@@ -868,7 +873,7 @@ height: 900px;
     .formEmail input {
      width: 80%;
       border-color: transparent;
-      border-bottom: 1px solid #E2A405;
+      border-bottom: 1px solid $color1;
     }
     .formTlf {
       width: 30%;
@@ -876,7 +881,7 @@ height: 900px;
     .formTlf input {
       width: 80%;
       border-color: transparent;
-      border-bottom: 1px solid #E2A405;
+      border-bottom: 1px solid $color1;
     }
     .formPadre3 {
       padding: 10px;
@@ -895,7 +900,7 @@ height: 900px;
       align-items: center;
     }
     .enviar input {
-      background-color: #E2A405;
+      background-color: $color1;
       width: 20%;
       height: 25px;
     }
