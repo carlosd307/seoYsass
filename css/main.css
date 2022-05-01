@@ -188,9 +188,12 @@ variablesDeColor
     grid-area: hero;
     padding-top: 35%;
     /*incioformulario*/
-    /*inicioF1*/
-    /*finF1*/
-    /*inicioF2*/
+    /*---------
+     formulario
+     ----------*/
+    /*----------------------
+              EXTEND
+    -----------------------*/
   }
   .bodyPages #hero .btn {
     background-color: #E2A405;
@@ -218,7 +221,7 @@ variablesDeColor
     position: relative;
     left: 5px;
   }
-  .bodyPages #hero .formPadre {
+  .bodyPages #hero .CajaPadreTlf1, .bodyPages #hero .CajaPadreTlf3 {
     width: 100%;
     height: 100%;
     padding: 5px;
@@ -228,82 +231,36 @@ variablesDeColor
     justify-content: space-between;
     align-items: flex-start;
   }
-  .bodyPages #hero .formPadre .formNombre {
+  .bodyPages #hero .CajaPadreTlf1 .formDatos input, .bodyPages #hero .CajaPadreTlf3 .formDatos input {
+    width: 80%;
+    height: 80%;
+    border-color: transparent;
+    border-bottom: 1px solid #E2A405;
+    background-color: whitesmoke;
+  }
+  .bodyPages #hero .CajaPadreTlf1 .formNom-cel, .bodyPages #hero .CajaPadreTlf3 .formNom-cel, .bodyPages #hero .CajaPadreTlf1 .formEmail-cel, .bodyPages #hero .CajaPadreTlf3 .formEmail-cel, .bodyPages #hero .CajaPadreTlf1 .formTlf-cel, .bodyPages #hero .CajaPadreTlf3 .formTlf-cel, .bodyPages #hero .CajaPadreTlf1 .formDni-cel, .bodyPages #hero .CajaPadreTlf3 .formDni-cel {
     padding: 5px;
     margin: 10px;
   }
-  .bodyPages #hero .formPadre .formNombre input {
-    width: 80%;
-    height: 80%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
-  }
-  .bodyPages #hero .formPadre2 {
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .bodyPages #hero .formDni {
-    padding: 5px;
-    margin: 10px;
+  .bodyPages #hero .formDni-cel {
     display: flex;
     flex-direction: column;
   }
-  .bodyPages #hero .formDni input {
-    width: 80%;
-    height: 80%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
-  }
-  .bodyPages #hero .formTlf {
-    padding: 3px;
-    margin: 8px;
+  .bodyPages #hero .formTlf-cel {
     display: flex;
     flex-direction: column;
   }
-  .bodyPages #hero .formTlf input {
-    width: 80%;
-    height: 80%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
+  .bodyPages #hero .formEmail-cel {
+    display: flex;
+    flex-direction: column;
   }
-  .bodyPages #hero .formPadre3 {
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    margin: 5px;
+  .bodyPages #hero .CajaPadreTlf3 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
-  }
-  .bodyPages #hero .formEmail {
-    padding: 3px;
-    margin: 8px;
-  }
-  .bodyPages #hero .formEmail input {
-    width: 80%;
-    height: 80%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
-  }
-  .bodyPages #hero .formPadre4 {
-    padding: 5px;
-    margin: 5px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    padding-left: 5px;
+    text-align: center;
   }
   .bodyPages #hero .enviar {
     width: 100%;
@@ -529,7 +486,6 @@ variablesDeColor
     /*inicioLaterales*/
     /*finLateral/*
     /*inicioContenido*/
-    /*finFormulario*/
   }
   .bodyPages aside {
     grid-area: lateral;
@@ -580,7 +536,6 @@ variablesDeColor
     grid-area: hero;
     padding-top: 100px;
     /*tituloPages*/
-    /*formulario*/
   }
   .bodyPages #hero .col-12 {
     margin: 40px;
@@ -608,7 +563,14 @@ variablesDeColor
     padding: 15px;
     margin: 10px;
   }
-  .bodyPages #hero .formPadre {
+
+  /*------------
+    formulario
+  -------------*/
+  /*----------------------
+          EXTEND
+  -----------------------*/
+  .CajaPadreTablet1, .CajaPadreTablet3 {
     width: 100%;
     height: 50%;
     padding: 10px;
@@ -618,86 +580,53 @@ variablesDeColor
     justify-content: space-around;
     align-items: flex-start;
   }
-  .bodyPages #hero .formNombre {
-    width: 30%;
+
+  .formNom-Tablet, .formEmail-Tablet, .formTlf-Tablet, .formDni-Tablet {
+    width: 40%;
     height: 30%;
   }
-  .bodyPages #hero .formNombre input {
-    width: 80%;
-    height: 30%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
-  }
-  .bodyPages #hero .formPadre2 {
-    width: 100%;
-    height: 50%;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  .bodyPages #hero .formDni {
-    width: 30%;
-    height: 30%;
+
+  .formDni-Tablet {
     display: flex;
     flex-direction: column;
   }
-  .bodyPages #hero .formDni input {
+
+  .formTlf-Tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formDatos input {
     width: 80%;
     height: 30%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
     background-color: whitesmoke;
   }
-  .bodyPages #hero .formEmail {
-    width: 30%;
-    height: 30%;
-  }
-  .bodyPages #hero .formEmail input {
-    width: 80%;
-    height: 30%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
-  }
-  .bodyPages #hero .formTlf {
-    width: 30%;
-    height: 30%;
-  }
-  .bodyPages #hero .formTlf input {
-    width: 80%;
-    height: 30%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
-  }
-  .bodyPages #hero .formPadre3 {
+
+  .CajaPadreTablet3 {
     width: 100%;
     height: 30%;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
   }
-  .bodyPages #hero .enviar {
+
+  .enviar {
     padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .bodyPages #hero .enviar input {
+
+  .enviar input {
     background-color: #E2A405;
     width: 30%;
     height: 30%;
   }
-
-  /*finBodyPages*/
 }
+/*finFormulario*/
+/*finBodyPages*/
 /*finMediaTablet*/
 /*--------------------------------------------------------------------------------------------------------------
                                                        desktop
@@ -871,7 +800,12 @@ variablesDeColor
     grid-area: hero;
     padding-top: 100px;
     /*titulo*/
-    /*formulario*/
+    /*---------
+    formulario
+    ----------*/
+    /*----------------------
+              EXTEND
+    -----------------------*/
   }
   .bodyPages #hero .card-img-top {
     width: 100%;
@@ -899,7 +833,7 @@ variablesDeColor
     padding: 15px;
     margin: 10px;
   }
-  .bodyPages #hero .formPadre {
+  .bodyPages #hero .CajaPadre1, .bodyPages #hero .CajaPadre3 {
     width: 100%;
     height: 50%;
     padding: 10px;
@@ -909,68 +843,28 @@ variablesDeColor
     justify-content: space-around;
     align-items: flex-start;
   }
-  .bodyPages #hero .formNombre {
-    width: 30%;
+  .bodyPages #hero .form-Nombre, .bodyPages #hero .form-Email, .bodyPages #hero .form-Tlf, .bodyPages #hero .form-Dni {
+    width: 40%;
     height: 30%;
   }
-  .bodyPages #hero .formNombre input {
-    width: 80%;
-    height: 30%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
-  }
-  .bodyPages #hero .formPadre2 {
-    width: 100%;
-    height: 50%;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-  .bodyPages #hero .formDni {
-    width: 30%;
-    height: 30%;
+  .bodyPages #hero .form-Dni {
     display: flex;
     flex-direction: column;
   }
-  .bodyPages #hero .formDni input {
+  .bodyPages #hero .form-Tlf {
+    display: flex;
+    flex-direction: column;
+  }
+  .bodyPages #hero .formDatos input {
     width: 80%;
     height: 30%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
     background-color: whitesmoke;
   }
-  .bodyPages #hero .formEmail {
-    width: 30%;
-    height: 30%;
-  }
-  .bodyPages #hero .formEmail input {
-    width: 80%;
-    height: 30%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
-  }
-  .bodyPages #hero .formTlf {
-    width: 30%;
-    height: 30%;
-  }
-  .bodyPages #hero .formTlf input {
-    width: 80%;
-    height: 30%;
-    border-color: transparent;
-    border-bottom: 1px solid #E2A405;
-    background-color: whitesmoke;
-  }
-  .bodyPages #hero .formPadre3 {
+  .bodyPages #hero .CajaPadre3 {
     width: 100%;
     height: 30%;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;

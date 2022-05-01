@@ -216,8 +216,17 @@ margin: 10px;
 position: relative;
 left: 5px;
 }
-/*inicioF1*/
-.formPadre {
+
+
+   /*---------
+    formulario
+    ----------*/
+
+/*----------------------
+          EXTEND
+-----------------------*/
+
+.CajaPadreTlf1{
 @include tamanio(100%,100%);
 padding: 5px;
 margin: 5px; 
@@ -225,81 +234,47 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: flex-start;
-.formNombre {
-padding: 5px;
-margin: 10px;
+
+    .formDatos input{
+      @include tamanio(80%,80%);
+    border-color: transparent;
+    border-bottom: 1px solid $color1;
+    background-color: $color3;
+    }
+        .formNom-cel {
+          padding: 5px;
+          margin: 10px;
+          }
 }
-.formNombre input{
-  @include tamanio(80%,80%);
-border-color: transparent;
-border-bottom: 1px solid $color1;
-background-color: $color3;
-}
-}
-/*finF1*/
-/*inicioF2*/
-.formPadre2{
-  @include tamanio(100%,100%);
-    padding: 5px;
-    margin: 5px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.formDni{
-        padding: 5px;
-        margin: 10px;
+
+.formDni-cel{
+       @extend .formNom-cel;
         display: flex;
         flex-direction: column
     }
-    .formDni input{
-      @include tamanio(80%,80%);
-        border-color: transparent;
-        border-bottom: 1px solid $color1;
-        background-color: $color3;
-        
+    .formTlf-cel {
+      @extend .formNom-cel;
+      display: flex;
+      flex-direction: column
     }
-    .formTlf {
-        padding: 3px;
-        margin: 8px;
-        display: flex;
-        flex-direction: column
+    .formEmail-cel {
+      @extend .formNom-cel;
+      display: flex;
+      flex-direction: column
     }
-    .formTlf input {
-      @include tamanio(80%,80%);
-      border-color: transparent;
-      border-bottom: 1px solid $color1;
-      background-color: $color3;
-    }
-.formPadre3{
-  @include tamanio(100%,100%);
-    padding: 5px;
-    margin: 5px; 
+
+  
+.CajaPadreTlf3{
+@extend .CajaPadreTlf1;
 display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 align-items: flex-start;
+padding-left: 5px;
+text-align: center
 }
-.formEmail{
-    padding: 3px;
-    margin: 8px;
-}
-.formEmail input {
-  @include tamanio(80%,80%);
-        border-color: transparent;
-        border-bottom: 1px solid $color1;
-        background-color: $color3;
-}
-.formPadre4{
-    padding: 5px;
-    margin: 5px; 
-    width: 100%;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: flex-start;
-}
+
+
 .enviar{
 @include tamanio(100%,100%);
 padding-top: 50px;
@@ -595,92 +570,73 @@ align-items: center;
         padding: 15px;
         margin: 10px;
     }
-/*formulario*/
-.formPadre {
-  @include tamanio(100%,50%);
-    padding: 10px;
-    margin: 10px; 
+  }
+  }
+/*------------
+  formulario
+-------------*/
+
+/*----------------------
+        EXTEND
+-----------------------*/
+
+.CajaPadreTablet1{
+@include tamanio(100%,50%);
+  padding: 10px;
+  margin: 10px; 
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: flex-start;
+ }
+.formNom-Tablet {
+@include tamanio(40%,30%);
+
+}
+.formDni-Tablet{
+@extend .formNom-Tablet;
+ display: flex;
+       flex-direction: column
+ }
+ .formTlf-Tablet{
+  @extend .formNom-Tablet;
    display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: flex-start;
+         flex-direction: column
+   }
+   .formEmail-Tablet{
+    @extend .formNom-Tablet;
+    
+     }
    
-}
-.formNombre {
-  @include tamanio(30%,30%);
-  
-}
-.formNombre input {
-  @include tamanio(80%,30%);
-   border-color: transparent;
- border-bottom: 1px solid $color1;
- background-color: $color3;
-}
-.formPadre2{
-  @include tamanio(100%,50%);
-    padding: 10px;
-    margin: 10px; 
-  display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-   align-items: flex-start;
-}
-.formDni{
-  @include tamanio(30%,30%);
-  display: flex;
-        flex-direction: column
- 
+.formDatos input {
+@include tamanio(80%,30%);
+ border-color: transparent;
+border-bottom: 1px solid $color1;
+background-color: $color3;
 }
 
-.formDni input {
-  @include tamanio(80%,30%);
-    border-color: transparent;
-  border-bottom: 1px solid $color1;
-  background-color: $color3;
-   
- }
-.formEmail{
-  @include tamanio(30%,30%);
-}
-.formEmail input {
-  @include tamanio(80%,30%);
-    border-color: transparent;
-  border-bottom: 1px solid $color1;
-  background-color: $color3;
-   }
-.formTlf {
-  @include tamanio(30%,30%);
-}
- .formTlf input {
-  @include tamanio(80%,30%);
-    border-color: transparent;
-  border-bottom: 1px solid $color1;
-  background-color: $color3;
-}
-.formPadre3{
-  @include tamanio(100%,30%);
-    padding: 10px;
-    margin: 10px; 
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   align-items: flex-start;
+.CajaPadreTablet3{
+@extend .CajaPadreTablet1;
+@include tamanio(100%,30%);
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: flex-start;
 }
 .enviar{
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
- .enviar input {
-     background-color: $color1;
-     @include tamanio(30%,30%);
-    }
-}
- /*finFormulario*/
+.enviar input {
+   background-color: $color1;
+   @include tamanio(30%,30%);
   }
-  /*finBodyPages*/
 }
+/*finFormulario*/
+
+  /*finBodyPages*/
+
 /*finMediaTablet*/
 
 /*--------------------------------------------------------------------------------------------------------------
@@ -868,8 +824,17 @@ align-items: center;
       padding: 15px;
       margin: 10px;
     }
-    /*formulario*/
-    .formPadre {
+
+
+    /*---------
+    formulario
+    ----------*/
+
+/*----------------------
+          EXTEND
+-----------------------*/
+
+    .CajaPadre1{
       @include tamanio(100%,50%);
         padding: 10px;
         margin: 10px; 
@@ -877,64 +842,35 @@ align-items: center;
        flex-direction: row;
        justify-content: space-around;
        align-items: flex-start;
-       
-    }
-    .formNombre {
-      @include tamanio(30%,30%);
+       }
+    .form-Nombre {
+      @include tamanio(40%,30%);
       
     }
-    .formNombre input {
+    .form-Dni{
+      @extend .form-Nombre;
+     display: flex;
+           flex-direction: column
+     }
+     .form-Tlf{
+      @extend .form-Nombre;
+     display: flex;
+           flex-direction: column
+     }
+     .form-Email{
+      @extend .form-Nombre;
+     
+     }
+    .formDatos input {
       @include tamanio(80%,30%);
        border-color: transparent;
      border-bottom: 1px solid $color1;
      background-color: $color3;
     }
-    .formPadre2{
-      @include tamanio(100%,50%);
-        padding: 10px;
-        margin: 10px; 
-      display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-       align-items: flex-start;
-    }
-    .formDni{
-      @include tamanio(30%,30%);
-      display: flex;
-            flex-direction: column
-     
-    }
-    
-    .formDni input {
-      @include tamanio(80%,30%);
-        border-color: transparent;
-      border-bottom: 1px solid $color1;
-      background-color: $color3;
-       
-     }
-    .formEmail{
-      @include tamanio(30%,30%);
-    }
-    .formEmail input {
-      @include tamanio(80%,30%);
-        border-color: transparent;
-      border-bottom: 1px solid $color1;
-      background-color: $color3;
-       }
-    .formTlf {
-      @include tamanio(30%,30%);
-    }
-     .formTlf input {
-      @include tamanio(80%,30%);
-        border-color: transparent;
-      border-bottom: 1px solid $color1;
-      background-color: $color3;
-    }
-    .formPadre3{
+ 
+    .CajaPadre3{
+      @extend .CajaPadre1;
       @include tamanio(100%,30%);
-        padding: 10px;
-        margin: 10px; 
-       display: flex;
        flex-direction: row;
        justify-content: space-evenly;
        align-items: flex-start;

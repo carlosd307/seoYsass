@@ -1,0 +1,11 @@
+se agrego mixin en todo el proyecto
+se coloco variables de colores 
+se agrego en todos los html estas palabras claves:
+MOTOS, motovlogger, motorsports,honda,suzuki, yamaha.
+se comprimio el peso de todas las imagenes del proyecto con
+https://compressjpeg.com/es/.
+se cambio el Boostraps local a online para ganar espacio
+en el proyecto.
+
+
+
