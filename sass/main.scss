@@ -267,7 +267,7 @@ justify-content: space-between;
 align-items: flex-start;
 
     .formDatos input{
-      @include tamanio(80%,80%);
+      @include tamanio(200px,80%);
     border-color: transparent;
     border-bottom: 1px solid $color1;
     background-color: $color3;
@@ -275,23 +275,22 @@ align-items: flex-start;
         .formNom-cel {
           padding: 5px;
           margin: 10px;
+          display: flex;
+          flex-direction: column
           }
 }
 
 .formDni-cel{
        @extend .formNom-cel;
-        display: flex;
-        flex-direction: column
+      
     }
     .formTlf-cel {
       @extend .formNom-cel;
-      display: flex;
-      flex-direction: column
+    
     }
     .formEmail-cel {
       @extend .formNom-cel;
-      display: flex;
-      flex-direction: column
+  
     }
 
   

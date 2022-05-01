@@ -255,7 +255,7 @@ variablesDeColor
     align-items: flex-start;
   }
   .bodyPages #hero .CajaPadreTlf1 .formDatos input, .bodyPages #hero .CajaPadreTlf3 .formDatos input {
-    width: 80%;
+    width: 200px;
     height: 80%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
@@ -264,16 +264,6 @@ variablesDeColor
   .bodyPages #hero .CajaPadreTlf1 .formNom-cel, .bodyPages #hero .CajaPadreTlf3 .formNom-cel, .bodyPages #hero .CajaPadreTlf1 .formEmail-cel, .bodyPages #hero .CajaPadreTlf3 .formEmail-cel, .bodyPages #hero .CajaPadreTlf1 .formTlf-cel, .bodyPages #hero .CajaPadreTlf3 .formTlf-cel, .bodyPages #hero .CajaPadreTlf1 .formDni-cel, .bodyPages #hero .CajaPadreTlf3 .formDni-cel {
     padding: 5px;
     margin: 10px;
-  }
-  .bodyPages #hero .formDni-cel {
-    display: flex;
-    flex-direction: column;
-  }
-  .bodyPages #hero .formTlf-cel {
-    display: flex;
-    flex-direction: column;
-  }
-  .bodyPages #hero .formEmail-cel {
     display: flex;
     flex-direction: column;
   }
