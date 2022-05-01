@@ -7,6 +7,8 @@ https://compressjpeg.com/es/.
 se cambio el Boostraps local a online para ganar espacio
 en el proyecto.
 se agrego extend en la page de servicos en formularios.
+se aplico mapas en la galeria de compras 
+con el boton de comprar
 
 
 
