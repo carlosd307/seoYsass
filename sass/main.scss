@@ -267,7 +267,7 @@ justify-content: space-between;
 align-items: flex-start;
 
     .formDatos input{
-      @include tamanio(200px,80%);
+      @include tamanio(210px,80%);
     border-color: transparent;
     border-bottom: 1px solid $color1;
     background-color: $color3;

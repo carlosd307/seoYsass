@@ -255,7 +255,7 @@ variablesDeColor
     align-items: flex-start;
   }
   .bodyPages #hero .CajaPadreTlf1 .formDatos input, .bodyPages #hero .CajaPadreTlf3 .formDatos input {
-    width: 200px;
+    width: 210px;
     height: 80%;
     border-color: transparent;
     border-bottom: 1px solid #E2A405;
