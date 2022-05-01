@@ -10,6 +10,9 @@ variablesDeColor
 /*--------------
     mixin
 ----------------*/
+/*--------------
+    MAPAS 
+----------------*/
 /*------------------------------------------------------------------------------------------------------------
                                            mobileFirts Iniciosmartphone
 -------------------------------------------------------------------------------------------------------------*/
@@ -25,25 +28,42 @@ variablesDeColor
     background-repeat: no-repeat;
   }
 
-  /*estructuraConGrid*/
+  /*-------------------
+     estructuraConGrid
+  ---------------------*/
   #gridAreas {
     display: grid;
     grid-template-areas: "menu cabeza lateral" "menu cabeza lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
     grid-template-columns: 25% 50% 20%;
     grid-template-rows: 1fr 2fr 2fr 1fr 1r 3fr 3fr 1fr 1fr;
-    /*header*/
-    /*inicioMenuNavegacion*/
-    /*finNav*/
-    /*inicioContenido*/
-    /*finContenido*/
-    /*inicioLateral*/
-    /*finLateral*/
-    /*inicioCarrusel*/
-    /*finCarrusel*/
-    /*inicioNewsletter*/
-    /*finNewsletter*/
-    /*inicioFooter*/
-    /*finFooter*/
+    /*--------------------
+      header
+    ----------------------*/
+    /*-------------------------
+            MenuNavegacion
+    ---------------------------*/
+    /*-----------------------
+          inicioContenido
+    ------------------------*/
+    /*----------------------------
+            finContenido
+            inicioLateral
+    ------------------------------*/
+    /*----------------------------
+            finContenido
+            inicioCarrusel
+    ------------------------------*/
+    /*----------------------------
+            finCarrusel
+            inicioNersLetter
+    ------------------------------*/
+    /*----------------------------
+            finNersLetter
+            inicioFotter
+    ------------------------------*/
+    /*---------------------
+           finFooter
+    ---------------------*/
   }
   #gridAreas header {
     grid-area: cabeza;
@@ -168,7 +188,9 @@ variablesDeColor
     padding-top: 20px;
   }
 
-  /*finBodyIndex*/
+  /*-------------------
+      finBodyIndex
+  -------------------*/
   /*-----------------------------
   shopPages&ServiciosSmartphone-
   ------------------------------**/
@@ -176,21 +198,22 @@ variablesDeColor
     width: 100%;
     height: 150vh;
     background-color: whitesmoke;
-    /*inicioContenido*/
+    /*---------------------------
+            inicioContenido
+    ----------------------------*/
     /*------------------
         finFormulario
-        finContenido
     -------------------*/
-    /*incioLateral*/
+    /*incioLateral
+    ------------------*/
     /*finLateral*/
   }
   .bodyPages #hero {
     grid-area: hero;
     padding-top: 35%;
-    /*incioformulario*/
-    /*---------
-     formulario
-     ----------*/
+    /*----------------
+        formulario
+    -----------------*/
     /*----------------------
               EXTEND
     -----------------------*/
@@ -319,7 +342,9 @@ variablesDeColor
 --------------------------------------------------------------------------*/
 /*inicioMediaQueriesTablet*/
 @media (min-width: 476px) and (max-width: 990px) {
-  /*inicioBody*/
+  /*--------------------
+          inicioBody
+  ---------------------*/
   .bodyIndex {
     width: 100%;
     height: 100vh;
@@ -329,25 +354,41 @@ variablesDeColor
     background-repeat: no-repeat;
   }
 
-  /*estructuracongrid*/
+  /*--------------------------
+        estructuracongrid
+  ---------------------------*/
   #gridAreas {
     display: grid;
     grid-template-areas: " menu cabeza lateral" "menu cabeza lateral" "hero hero lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
     grid-template-columns: 30% 50% 30%;
     grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
-    /*inicioHeader*/
-    /*inicioMenuNavegacion*/
-    /*finMenuNavegacion*/
-    /*incioContenido*/
-    /*finContenido*/
-    /*inicioLaterales*/
-    /*finLaterales*/
-    /*iniciocarrusel*/
-    /*finCarrusel*/
-    /*inicioNewsletter*/
-    /*finNewsletter*/
-    /*inicoFooter*/
-    /*finFooter*/
+    /*---------------------
+              Header
+    ------------------------*/
+    /*--------------------------
+           MenuNavegacion
+    -----------------------------*/
+    /*-----------------------
+             Contenido
+    -------------------------*/
+    /*------------------------
+          Laterales
+    ------------------------*/
+    /*----------------------------
+            finContenido
+            inicioCarrusel
+    ------------------------------*/
+    /*----------------------------
+            finCarrusel
+            inicioNersLetter
+    ------------------------------*/
+    /*------------------------------
+              finNersLetter
+              inicioFooter
+    -------------------------------*/
+    /*-----------------------
+             finFooter
+    ------------------------*/
   }
   #gridAreas header {
     grid-area: cabeza;
@@ -356,8 +397,6 @@ variablesDeColor
   }
   #gridAreas nav {
     grid-area: menu;
-    /*inicioMenu*/
-    /*finMenu*/
   }
   #gridAreas nav .menu {
     margin-left: 35%;
@@ -476,16 +515,22 @@ variablesDeColor
   }
 
   /*----------------------------------------------------------------------------------------
-                                    shop-Pages-ServiciosTablet
+                                    shop-Pages-Servicios-Tablet
   ---------------------------------------------------------------------------------------**/
-  /*inicoBodyPages*/
+  /*--------------------
+      inicoBodyPages
+  --------------------*/
   .bodyPages {
     width: 100%;
     height: 150vh;
     background-color: whitesmoke;
-    /*inicioLaterales*/
-    /*finLateral/*
-    /*inicioContenido*/
+    /*-------------------------
+               Laterales
+    ----------------------------*/
+    /*--------------------------------
+                 finLateral
+               inicioContenido
+    -------------------------------------*/
   }
   .bodyPages aside {
     grid-area: lateral;
@@ -625,9 +670,10 @@ variablesDeColor
     height: 30%;
   }
 }
-/*finFormulario*/
-/*finBodyPages*/
-/*finMediaTablet*/
+/*----------------------------------------------------
+                      finFormulario
+                      finMediaTablet
+-----------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------
                                                        desktop
 ---------------------------------------------------------------------------------------------------------------*/
@@ -641,24 +687,38 @@ variablesDeColor
     background-repeat: no-repeat;
   }
 
-  /*estructuracongrid*/
+  /*---------------------------------
+            estructuraConGrid
+  -----------------------------------*/
   #gridAreas {
     display: grid;
     grid-template-areas: "cabeza menu lateral" "cabeza menu lateral" "hero hero lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
     grid-template-columns: 30% 50% 30%;
     grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
     /*header*/
-    /*menuNavegacion*/
-    /*finMenuNavegacion*/
-    /*incioContenido*/
+    /*---------------------------------
+                menuNavegacion
+    ----------------------------------*/
+    /*------------------------
+          finMenuNavegacion
+          incioContenido
+    -------------------------*/
     /*tituloIndex*/
-    /*inicioLaterales*/
-    /*finContenido*/
-    /*iniciocarrusel*/
-    /*finCarrusel*/
-    /*inicioNewsletter*/
-    /*finNewsletter*/
-    /*footer*/
+    /*---------------------------
+            inicioLaterales
+    ----------------------------*/
+    /*----------------------
+        finContenido
+        iniciocarrusel
+    ----------------------*/
+    /*------------------------------
+              finCarrusel
+              inicioNewsletter
+    ---------------------------------*/
+    /*----------------------------
+            finNewsletter
+              footer
+    ------------------------------*/
   }
   #gridAreas header {
     grid-area: cabeza;
@@ -785,14 +845,25 @@ variablesDeColor
   /*--------------------------------------------------------------------
                           shopPages----pagesServicios
   -------------------------------------------------------------------**/
-  /*body*/
+  /*-------------------
+          body
+  -------------------*/
   .bodyPages {
     width: 100%;
     height: 100vh;
     background-color: whitesmoke;
-    /*contenido*/
-    /*finFormulario*/
-    /*inicioLaterales*/
+    /*------------------------
+              contenido
+    -------------------------*/
+    /*----------------------
+              MAPA
+    -----------------------*/
+    /*--------------------------
+            finFormulario
+    ---------------------------*/
+    /*-------------------------
+           inicioLaterales
+    -------------------------*/
     /*finLateral/*
     /*finBodyPages*/
   }
@@ -800,9 +871,9 @@ variablesDeColor
     grid-area: hero;
     padding-top: 100px;
     /*titulo*/
-    /*---------
-    formulario
-    ----------*/
+    /*----------------------
+          formulario
+    -----------------------*/
     /*----------------------
               EXTEND
     -----------------------*/
@@ -811,8 +882,13 @@ variablesDeColor
     width: 100%;
     height: 130px;
   }
-  .bodyPages #hero .btn {
+  .bodyPages #hero .botonbtn1 {
     background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+  }
+  .bodyPages #hero .botonbtn2 {
+    background-color: green;
     font-size: 14px;
     color: black;
   }

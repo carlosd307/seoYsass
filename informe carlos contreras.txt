@@ -6,6 +6,9 @@ se comprimio el peso de todas las imagenes del proyecto con
 https://compressjpeg.com/es/.
 se cambio el Boostraps local a online para ganar espacio
 en el proyecto.
+se agrego extend en la page de servicos en formularios.
+
+
 
 
 
