@@ -534,38 +534,34 @@ variablesDeColor
     flex-direction: row;
     justify-content: center;
   }
-  .bodyPages aside .LogodeMcarcasPages {
+  .bodyPages aside .marcasPadre {
+    position: relative;
+    top: 25px;
+  }
+  .bodyPages aside .marcasPadre .LogodeMcarcasPages {
     width: 30px;
     height: 30px;
   }
   .bodyPages aside .logoMarcasYBusqueda {
-    padding-top: 10%;
-    padding-left: 10px;
+    width: 230px;
+    height: 50px;
     position: relative;
-    right: 30%;
+    left: 110px;
+    top: 70px;
     background-color: whitesmoke;
   }
   .bodyPages aside .logoMarcasYBusqueda .buscar {
-    width: 70%;
-    height: 10%;
+    width: 200px;
+    height: 80%;
   }
   .bodyPages aside .logoMarcasYBusqueda .buscar .busquedaBuscar {
     background-color: whitesmoke;
     border-color: #4D4D4D;
   }
   .bodyPages aside .logoMarcasYBusqueda .buscar .botonBuscar {
-    background-color: #E2A405;
-  }
-  .bodyPages aside .marcasPadre {
-    width: 40%;
+    width: 70px;
     height: 100%;
-    position: relative;
-    right: 60%;
-  }
-  .bodyPages aside .marcasPadre .imgMarcas {
-    position: relative;
-    right: 100%;
-    bottom: 40px;
+    background-color: #E2A405;
   }
   .bodyPages #hero {
     grid-area: hero;
@@ -683,7 +679,7 @@ variablesDeColor
   #gridAreas {
     display: grid;
     grid-template-areas: "cabeza menu lateral" "cabeza menu lateral" "hero hero lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
-    grid-template-columns: 30% 50% 30%;
+    grid-template-columns: 30% 40% 30%;
     grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
     /*header*/
     /*---------------------------------
@@ -719,7 +715,7 @@ variablesDeColor
     grid-area: menu;
   }
   #gridAreas .menu {
-    margin-left: 35%;
+    margin-left: 25%;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -840,7 +836,7 @@ variablesDeColor
   -------------------*/
   .bodyPages {
     width: 100%;
-    height: 100vh;
+    height: 170vh;
     background-color: whitesmoke;
     /*------------------------
               contenido
@@ -958,38 +954,34 @@ variablesDeColor
     flex-direction: row;
     justify-content: center;
   }
-  .bodyPages aside .LogodeMcarcasPages {
+  .bodyPages aside .marcasPadre {
+    position: relative;
+    top: 25px;
+  }
+  .bodyPages aside .marcasPadre .LogodeMcarcasPages {
     width: 30px;
     height: 30px;
   }
   .bodyPages aside .logoMarcasYBusqueda {
-    padding-top: 10%;
-    padding-left: 10px;
+    width: 230px;
+    height: 50px;
     position: relative;
-    right: 30%;
+    left: 110px;
+    top: 70px;
     background-color: whitesmoke;
   }
   .bodyPages aside .logoMarcasYBusqueda .buscar {
-    width: 70%;
-    height: 10%;
+    width: 200px;
+    height: 80%;
   }
   .bodyPages aside .logoMarcasYBusqueda .buscar .busquedaBuscar {
     background-color: whitesmoke;
     border-color: #4D4D4D;
   }
   .bodyPages aside .logoMarcasYBusqueda .buscar .botonBuscar {
-    background-color: #E2A405;
-  }
-  .bodyPages aside .marcasPadre {
-    width: 40%;
+    width: 70px;
     height: 100%;
-    position: relative;
-    right: 60%;
-  }
-  .bodyPages aside .marcasPadre .imgMarcas {
-    position: relative;
-    right: 100%;
-    bottom: 40px;
+    background-color: #E2A405;
   }
 }
 /*finmediaQueriesDesktop*/
