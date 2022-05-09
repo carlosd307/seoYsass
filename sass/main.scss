@@ -350,9 +350,9 @@ align-items: center;
         padding-top: 40%;
     }
     .busquedaBuscar{
-      @include tamanio(170px,35px);
+      @include tamanio(100px,35px);
        position: relative;
-         right: 180px;
+         right: 95px;
          background-color: $color3;
          border-color: $color2
       
@@ -360,7 +360,7 @@ align-items: center;
     .botonBuscar{
       @include tamanio(70px,35px);
         position: relative;
-          right: 185px;
+          right: 95px;
           background-color: $color1;
     }
     .marcasPadre{
@@ -410,7 +410,7 @@ align-items: center;
         "carrusel carrusel carrusel"
         "carrusel carrusel carrusel"
         "pie pie pie";
-        ;grid-template-columns: 30% 50% 30%;
+        ;grid-template-columns: 30% 40% 30%;
         ;grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
 /*---------------------
           Header
@@ -503,20 +503,19 @@ align-items: center;
     padding-left: 60px;
   }
   .heroSubtitleCarru {
-    padding-left: 70px;
-  
+    padding-left: 80px;
   }
   .carrusel {
     grid-area: carrusel;
-    @include tamanio(92%,1500px);
+    @include tamanio(100%,1000px);
     background-color: $color3;
     .d-block{
-      @include tamanio(60px,450px);
+      @include tamanio(200px,350px);
       
     }
   }
   #carouselExampleControls {
-    margin-top: 5%;
+  margin-top: 5%;
     margin-bottom: 3%;
   }
 /*----------------------------

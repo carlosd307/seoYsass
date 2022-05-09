@@ -312,10 +312,10 @@ variablesDeColor
     padding-top: 40%;
   }
   .bodyPages aside .busquedaBuscar {
-    width: 170px;
+    width: 100px;
     height: 35px;
     position: relative;
-    right: 180px;
+    right: 95px;
     background-color: whitesmoke;
     border-color: #4D4D4D;
   }
@@ -323,7 +323,7 @@ variablesDeColor
     width: 70px;
     height: 35px;
     position: relative;
-    right: 185px;
+    right: 95px;
     background-color: #E2A405;
   }
   .bodyPages aside .marcasPadre {
@@ -366,7 +366,7 @@ variablesDeColor
   #gridAreas {
     display: grid;
     grid-template-areas: " menu cabeza lateral" "menu cabeza lateral" "hero hero lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
-    grid-template-columns: 30% 50% 30%;
+    grid-template-columns: 30% 40% 30%;
     grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
     /*---------------------
               Header
@@ -475,17 +475,17 @@ variablesDeColor
     padding-left: 60px;
   }
   #gridAreas .heroSubtitleCarru {
-    padding-left: 70px;
+    padding-left: 80px;
   }
   #gridAreas .carrusel {
     grid-area: carrusel;
-    width: 92%;
-    height: 1500px;
+    width: 100%;
+    height: 1000px;
     background-color: whitesmoke;
   }
   #gridAreas .carrusel .d-block {
-    width: 60px;
-    height: 450px;
+    width: 200px;
+    height: 350px;
   }
   #gridAreas #carouselExampleControls {
     margin-top: 5%;
