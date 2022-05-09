@@ -488,7 +488,8 @@ variablesDeColor
     height: 450px;
   }
   #gridAreas #carouselExampleControls {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 5%;
     margin-bottom: 3%;
   }
@@ -858,7 +859,8 @@ variablesDeColor
     height: 650px;
   }
   #gridAreas #carouselExampleControls {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 5%;
     margin-bottom: 3%;
   }
