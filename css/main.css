@@ -33,8 +33,8 @@ variablesDeColor
   ---------------------*/
   #gridAreas {
     display: grid;
-    grid-template-areas: "menu cabeza lateral" "menu cabeza lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
-    grid-template-columns: 25% 50% 20%;
+    grid-template-areas: "menu cabeza lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
+    grid-template-columns: 35% 45% 20%;
     grid-template-rows: 1fr 2fr 2fr 1fr 1r 3fr 3fr 1fr 1fr;
     /*--------------------
       header
@@ -140,6 +140,10 @@ variablesDeColor
     height: 800px;
     margin-top: 100%;
   }
+  #gridAreas .carrusel .d-block {
+    width: 100px;
+    height: 250px;
+  }
   #gridAreas .carrusel #carouselExampleControls {
     margin-left: 8px;
     margin-top: 10%;
@@ -196,7 +200,7 @@ variablesDeColor
   ------------------------------**/
   .bodyPages {
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     background-color: whitesmoke;
     /*---------------------------
             inicioContenido
@@ -223,8 +227,20 @@ variablesDeColor
     font-size: 14px;
     color: black;
   }
+  .bodyPages #hero .rowflex0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bodyPages #hero .rowflex0 .colp {
+    margin-top: 45px;
+    margin-left: 35px;
+  }
   .bodyPages #hero .card-img-top {
     background-color: #dadada;
+  }
+  .bodyPages #hero .ulti {
+    margin-bottom: 100px;
   }
   .bodyPages #hero .titulo {
     width: 40%;
@@ -466,6 +482,10 @@ variablesDeColor
     width: 100%;
     height: 1500px;
     background-color: whitesmoke;
+  }
+  #gridAreas .carrusel .d-block {
+    width: 100px;
+    height: 450px;
   }
   #gridAreas #carouselExampleControls {
     margin-left: 20px;

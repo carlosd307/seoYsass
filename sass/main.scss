@@ -49,7 +49,6 @@ $mapas: (
  #gridAreas{
   display: grid;
     grid-template-areas:"menu cabeza lateral"
-    "menu cabeza lateral"
      "hero hero lateral"
      "hero hero lateral"
      "carrusel carrusel carrusel"
@@ -57,7 +56,7 @@ $mapas: (
      "carrusel carrusel carrusel"
      "carrusel carrusel carrusel"
      "pie pie pie";
-     ;grid-template-columns: 25% 50% 20%;
+     ;grid-template-columns: 35% 45% 20%;
      ;grid-template-rows: 1fr 2fr 2fr 1fr 1r 3fr 3fr 1fr 1fr;
 
      /*--------------------
@@ -71,6 +70,7 @@ $mapas: (
 ---------------------------*/
     nav{
         grid-area: menu;
+        
     }
         .menu{
             display: flex;
@@ -147,6 +147,10 @@ aside{
 background-color: $color3;
 @include tamanio(116%,800px);
 margin-top: 100%;
+.d-block{
+  @include tamanio(100px,250px);
+  
+}
 #carouselExampleControls{
     margin-left: 8px;
     margin-top: 10%;
@@ -192,7 +196,7 @@ margin-top: 100%;
     grid-area: pie;
     background-color:$color1;
     color:  $color2;
-    text-align: center;
+   text-align: center;
     @include tamanio(100%,10%);
     position: fixed;
     bottom: 0;
@@ -212,12 +216,15 @@ margin-top: 100%;
 shopPages&ServiciosSmartphone-
 ------------------------------**/
 .bodyPages{
-  @include tamanio(100%,150vh);
+  @include tamanio(100%,100vh);
   background-color: $color3;
+
+
 
 /*---------------------------
         inicioContenido
 ----------------------------*/
+
 #hero {
     grid-area: hero;
     padding-top: 35%;
@@ -226,8 +233,21 @@ shopPages&ServiciosSmartphone-
         font-size: 14px;
         color: black;
     }
+    .rowflex0{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .colp{
+        margin-top: 45px;
+        margin-left: 35px;
+      }
+    }
     .card-img-top{
     background-color: $color4;
+    }
+    .ulti{
+     
+      margin-bottom: 100px;
     }
     .titulo{
       @include tamanio(40%,40%);
@@ -489,6 +509,10 @@ align-items: center;
     grid-area: carrusel;
     @include tamanio(100%,1500px);
     background-color: $color3;
+    .d-block{
+      @include tamanio(100px,450px);
+      
+    }
   }
   #carouselExampleControls {
     margin-left: 20px;
