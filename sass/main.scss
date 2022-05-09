@@ -542,8 +542,58 @@ align-items: center;
     inicoBodyPages
 --------------------*/
 .bodyPages{
-  @include tamanio(100%,150vh);
+  @include tamanio(100%,170vh);
     background-color:$color3;
+  /*------------------------
+            contenido
+  -------------------------*/
+
+/*----------------------
+          MAPA
+-----------------------*/
+
+#hero {
+  grid-area: hero;
+   padding-top: 100px;
+  .col3{
+    @include tamanio(1000px,300px);
+  .rowflex3{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .colp{
+    margin: 15px
+  }
+}
+ 
+.col4{
+@extend.col3;
+.rowflex4{
+@extend.rowflex3;
+}
+}
+.card-img-top{
+    @include tamanio(100%,130px);
+    background-color: $color4;
+   }
+   .card-body{
+    @include tamanio(100%,100%);
+   }
+
+   @each $nomMapa, $colorMapa in $mapas{
+
+   .boton#{$nomMapa} {
+     background-color: $colorMapa;
+     font-size: 14px;
+     color: black;
+   }
+  }
+}
+
+
+
  /*-------------------------
             Laterales
  ----------------------------*/
@@ -879,7 +929,7 @@ background-color: $color3;
        padding-top: 100px;
       .col1{
         @include tamanio(1000px,300px);
-        background-color: chartreuse;
+        
         .rowflex{
         display: flex;
         flex-direction: row;
@@ -892,20 +942,13 @@ background-color: $color3;
       }
    .col2{
  @extend.col1;
-background-color:crimson;
 .rowflex2{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  @extend.rowflex;
 }
-
 }
-
-
-
-      .card-img-top{
+.card-img-top{
         @include tamanio(100%,130px);
+        background-color: $color4;
        }
        .card-body{
         @include tamanio(100%,100%);
@@ -919,11 +962,7 @@ background-color:crimson;
          color: black;
        }
       }
-        .card-img-top {
-        background-color: $color4;
-        
-      
-    }
+    
     .tituloServicios {
       position: relative;
       left: 3%;

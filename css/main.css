@@ -512,8 +512,14 @@ variablesDeColor
   --------------------*/
   .bodyPages {
     width: 100%;
-    height: 150vh;
+    height: 170vh;
     background-color: whitesmoke;
+    /*------------------------
+              contenido
+    -------------------------*/
+    /*----------------------
+              MAPA
+    -----------------------*/
     /*-------------------------
                Laterales
     ----------------------------*/
@@ -521,6 +527,42 @@ variablesDeColor
                  finLateral
                inicioContenido
     -------------------------------------*/
+  }
+  .bodyPages #hero {
+    grid-area: hero;
+    padding-top: 100px;
+  }
+  .bodyPages #hero .col3, .bodyPages #hero .col4 {
+    width: 1000px;
+    height: 300px;
+  }
+  .bodyPages #hero .col3 .rowflex3, .bodyPages #hero .col4 .rowflex3, .bodyPages #hero .col4 .rowflex4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .bodyPages #hero .col3 .colp, .bodyPages #hero .col4 .colp {
+    margin: 15px;
+  }
+  .bodyPages #hero .card-img-top {
+    width: 100%;
+    height: 130px;
+    background-color: #dadada;
+  }
+  .bodyPages #hero .card-body {
+    width: 100%;
+    height: 100%;
+  }
+  .bodyPages #hero .botonbtn1 {
+    background-color: #E2A405;
+    font-size: 14px;
+    color: black;
+  }
+  .bodyPages #hero .botonbtn2 {
+    background-color: green;
+    font-size: 14px;
+    color: black;
   }
   .bodyPages aside {
     grid-area: lateral;
@@ -871,9 +913,8 @@ variablesDeColor
   .bodyPages #hero .col1, .bodyPages #hero .col2 {
     width: 1000px;
     height: 300px;
-    background-color: chartreuse;
   }
-  .bodyPages #hero .col1 .rowflex, .bodyPages #hero .col2 .rowflex {
+  .bodyPages #hero .col1 .rowflex, .bodyPages #hero .col2 .rowflex, .bodyPages #hero .col2 .rowflex2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -882,18 +923,10 @@ variablesDeColor
   .bodyPages #hero .col1 .colp, .bodyPages #hero .col2 .colp {
     margin: 15px;
   }
-  .bodyPages #hero .col2 {
-    background-color: crimson;
-  }
-  .bodyPages #hero .col2 .rowflex2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
   .bodyPages #hero .card-img-top {
     width: 100%;
     height: 130px;
+    background-color: #dadada;
   }
   .bodyPages #hero .card-body {
     width: 100%;
@@ -908,9 +941,6 @@ variablesDeColor
     background-color: green;
     font-size: 14px;
     color: black;
-  }
-  .bodyPages #hero .card-img-top {
-    background-color: #dadada;
   }
   .bodyPages #hero .tituloServicios {
     position: relative;
