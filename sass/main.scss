@@ -696,7 +696,7 @@ background-color: $color3;
 {
     /*inicioBody*/
     .bodyIndex {
-      @include tamanio(90%,150vh);
+      @include tamanio(100%,150vh);
       background-image: url(../img/homemoto.jpeg);
       background-size: cover;
       background-repeat: no-repeat;
@@ -710,6 +710,7 @@ background-color: $color3;
       grid-template-areas: "cabeza menu lateral" "cabeza menu lateral" "hero hero lateral" "hero hero lateral" "hero hero lateral" "carrusel carrusel carrusel" "carrusel carrusel carrusel" "pie pie pie";
       grid-template-columns: 30% 40% 30%;
       grid-template-rows: 1fr 1fr 3fr 3fr 2fr 2fr 2fr 2fr;
+
    /*header*/
    header {
       grid-area: cabeza;
@@ -723,7 +724,7 @@ background-color: $color3;
       grid-area: menu;
     }
     .menu {
-      margin-left: 25%;
+      margin-left: 20%;
       display: flex;
       flex-direction: row;
       align-items: flex-start;
@@ -808,6 +809,10 @@ background-color: $color3;
       @include tamanio(100%,1500px);
       grid-area: carrusel;
       background-color: $color3;
+      .d-block{
+        @include tamanio(200px,650px);
+        
+      }
     }
     #carouselExampleControls {
       margin-left: 20px;
@@ -871,9 +876,39 @@ background-color: $color3;
 
     #hero {
       grid-area: hero;
-      padding-top: 100px;
+       padding-top: 100px;
+      .col1{
+        @include tamanio(1000px,300px);
+        background-color: chartreuse;
+        .rowflex{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .colp{
+        margin: 15px
+      }
+      }
+   .col2{
+ @extend.col1;
+background-color:crimson;
+.rowflex2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+}
+
+
+
       .card-img-top{
         @include tamanio(100%,130px);
+       }
+       .card-body{
+        @include tamanio(100%,100%);
        }
 
        @each $nomMapa, $colorMapa in $mapas{
@@ -974,7 +1009,7 @@ background-color: $color3;
  -------------------------*/
     aside{
         grid-area: lateral;
-        @include tamanio(100%,100%);
+        @include tamanio(100%,30%);
      /*userCarrito*/
      .userCarritoPages{
         display: flex;
