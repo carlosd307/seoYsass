@@ -503,20 +503,19 @@ align-items: center;
     padding-left: 60px;
   }
   .heroSubtitleCarru {
-    padding-left: 80px;
+    padding-left: 70px;
+  
   }
   .carrusel {
     grid-area: carrusel;
-    @include tamanio(100%,1500px);
+    @include tamanio(92%,1500px);
     background-color: $color3;
     .d-block{
-      @include tamanio(100px,450px);
+      @include tamanio(60px,450px);
       
     }
   }
   #carouselExampleControls {
-    margin-left: 10px;
-    margin-right: 10px;
     margin-top: 5%;
     margin-bottom: 3%;
   }
