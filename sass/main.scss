@@ -1235,6 +1235,11 @@ background-color: $color1;
   
     }
   }
+
+  .pagosPadre{
+    @include tamanio(100%,100%);
+   padding-left: 50px;
+  }
 }
 
 /*finmediaQueriesDesktop*/
