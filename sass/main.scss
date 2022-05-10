@@ -343,8 +343,8 @@ align-items: center;
     grid-area: lateral;
     @include tamanio(100%,100%);
      .userCarritoPages{
-        padding-left: 20px;
-        padding-top: 20px;
+        padding-left: 60px;
+        padding-top: 13px;
     }
     .logoMarcasYBusqueda{
         padding-top: 40%;
@@ -664,13 +664,11 @@ background-color: $color3;
     aside{
         grid-area: lateral;
         @include tamanio(100%,100%);
-         /*userCarrito*/
-         .userCarritoPages{
-          margin-top: 8px;
-           display: flex;
-           flex-direction: row;
-         justify-content: center;
-       }
+        .userCarritoPages{
+          @include tamanio(200px,70px);
+          padding-left: 50%;
+          padding-top: 20%;
+      }
    /*iniciomarcasYBusqueda*/
 
     .marcasPadre{

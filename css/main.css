@@ -305,8 +305,8 @@ variablesDeColor
     height: 100%;
   }
   .bodyPages aside .userCarritoPages {
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 60px;
+    padding-top: 13px;
   }
   .bodyPages aside .logoMarcasYBusqueda {
     padding-top: 40%;
@@ -627,14 +627,13 @@ variablesDeColor
     grid-area: lateral;
     width: 100%;
     height: 100%;
-    /*userCarrito*/
     /*iniciomarcasYBusqueda*/
   }
   .bodyPages aside .userCarritoPages {
-    margin-top: 8px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    width: 200px;
+    height: 70px;
+    padding-left: 50%;
+    padding-top: 20%;
   }
   .bodyPages aside .marcasPadre {
     position: relative;
