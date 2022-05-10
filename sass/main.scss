@@ -420,7 +420,18 @@ background-color: $color3;
   }
   }
 }
+.bodyPagescompra{
+  @include tamanio(100%,100%);
 
+.compras{
+  @include tamanio(360px,100%);
+
+}
+.asidecompra{
+  @include tamanio(100%,25%);
+
+}
+}
 }
 /*-------------------------------------------------------------------------
                                     tablet

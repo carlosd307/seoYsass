@@ -382,6 +382,19 @@ variablesDeColor
   .formpageuser .formDatos input .botonsuscribiruser {
     background-color: #E2A405;
   }
+
+  .bodyPagescompra {
+    width: 100%;
+    height: 100%;
+  }
+  .bodyPagescompra .compras {
+    width: 360px;
+    height: 100%;
+  }
+  .bodyPagescompra .asidecompra {
+    width: 100%;
+    height: 25%;
+  }
 }
 /*-------------------------------------------------------------------------
                                     tablet
