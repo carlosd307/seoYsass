@@ -380,6 +380,46 @@ align-items: center;
     }
     /*finBodyPages/*
 /*finMediaQueriesSmarphone*/
+   /*-------------------------
+        pageUser
+ -------------------------*/
+
+ .asideuser{
+  @include tamanio(100%,30%);
+}
+.logoUsuario{
+@include tamanio(200px,200px);
+ background-color:$color4;
+    border-radius: 100%;
+    position: relative;
+    left: 80px;
+      .logoUsuario5{
+@include tamanio(100%,100%);
+border-radius: 100%;
+    .logoUsuario6{
+       @extend .logoUsuario5
+    }
+      }
+    }
+    .LOGOUSER{
+     padding-left: 20px;
+     padding-top: 30px;
+    }
+.formpageuser{
+position: relative;
+left: 70px;
+margin-bottom: 150px;
+.formDatos input{
+border-color: transparent;
+border-bottom: 1px solid $color1;
+background-color: $color3;
+.botonsuscribiruser{
+  background-color: $color1;
+ 
+  }
+  }
+}
+
 }
 /*-------------------------------------------------------------------------
                                     tablet
@@ -756,6 +796,45 @@ background-color: $color3;
    background-color: $color1;
    @include tamanio(30%,30%);
   }
+   /*-------------------------
+        pageUser
+ -------------------------*/
+
+.asideuser{
+  @include tamanio(100%,30%);
+}
+.logoUsuario{
+@include tamanio(300px,300px);
+ background-color:$color4;
+    border-radius: 100%;
+    position: relative;
+    left: 80px;
+      .logoUsuario3{
+@include tamanio(100%,100%);
+border-radius: 100%;
+    .logoUsuario4{
+       @extend .logoUsuario3
+    }
+      }
+    }
+    .LOGOUSER{
+      padding-left: 20px;
+     padding-bottom:40px;
+    }
+.formpageuser{
+position: relative;
+left:80px;
+padding-left: 60px;
+padding-bottom: 90px;
+.tamuser{
+  @include tamanio(840px,100%);
+}
+
+.botonsuscribiruser{
+background-color: $color1;
+
+}
+}
 }
 /*----------------------------------------------------
                       finFormulario
@@ -1114,7 +1193,45 @@ background-color: $color3;
      /*finLateral/*
 /*finBodyPages*/
 }
+ /*-------------------------
+        pageUser
+ -------------------------*/
 
-
+.asideuser{
+      @include tamanio(100%,30%);
+    }
+  .logoUsuario{
+    @include tamanio(400px,400px);
+     background-color:$color4;
+        border-radius: 100%;
+        position: relative;
+        left: 180px;
+          .logoUsuario1{
+    @include tamanio(100%,100%);
+   border-radius: 100%;
+        .logoUsuario2{
+           @extend .logoUsuario1
+        }
+          }
+        }
+        .LOGOUSER{
+         padding-left: 20px;
+         padding-top: 20px;
+        }
+  .formpageuser{
+    position: relative;
+    left:180px;
+    padding-left: 60px;
+    padding-bottom: 90px;
+   .tamuser{
+      @include tamanio(840px,100%);
+    }
+    
+    .botonsuscribiruser{
+    background-color: $color1;
+  
+    }
+  }
 }
+
 /*finmediaQueriesDesktop*/
