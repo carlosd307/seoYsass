@@ -631,6 +631,7 @@ variablesDeColor
     /*iniciomarcasYBusqueda*/
   }
   .bodyPages aside .userCarritoPages {
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1112,6 +1113,7 @@ variablesDeColor
     /*iniciomarcasYBusqueda*/
   }
   .bodyPages aside .userCarritoPages {
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
     justify-content: center;
