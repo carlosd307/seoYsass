@@ -1193,6 +1193,10 @@ variablesDeColor
     height: 100%;
     padding-left: 50px;
   }
+
+  hr {
+    color: #E2A405;
+  }
 }
 /*finmediaQueriesDesktop*/
 
