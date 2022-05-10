@@ -388,7 +388,7 @@ align-items: center;
   @include tamanio(100%,30%);
 }
 .logoUsuario{
-@include tamanio(200px,200px);
+@include tamanio(150px,150px);
  background-color:$color4;
     border-radius: 100%;
     position: relative;
@@ -805,7 +805,7 @@ background-color: $color3;
   @include tamanio(100%,30%);
 }
 .logoUsuario{
-@include tamanio(300px,300px);
+@include tamanio(200px,200px);
  background-color:$color4;
     border-radius: 100%;
     position: relative;
@@ -1204,7 +1204,7 @@ background-color: $color1;
       @include tamanio(100%,30%);
     }
   .logoUsuario{
-    @include tamanio(400px,400px);
+    @include tamanio(200px,200px);
      background-color:$color4;
         border-radius: 100%;
         position: relative;
