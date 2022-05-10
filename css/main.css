@@ -356,7 +356,8 @@ variablesDeColor
     background-color: #dadada;
     border-radius: 100%;
     position: relative;
-    left: 80px;
+    left: 20%;
+    margin-bottom: 30px;
   }
   .logoUsuario .logoUsuario5, .logoUsuario .logoUsuario5 .logoUsuario6 {
     width: 100%;
@@ -770,7 +771,8 @@ variablesDeColor
     background-color: #dadada;
     border-radius: 100%;
     position: relative;
-    left: 80px;
+    left: 20%;
+    margin-bottom: 30px;
   }
   .logoUsuario .logoUsuario3, .logoUsuario .logoUsuario3 .logoUsuario4 {
     width: 100%;

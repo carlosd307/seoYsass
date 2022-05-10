@@ -95,9 +95,9 @@
                </div>
              </div>
 
-<div class="formpageuser ">
+<div class="formpageuser">
   <form class="row g-3 needs-validation" novalidate>
-    <div class="col-md-4 formDatos tamuser  ">
+    <div class="col-md-4 formDatos tamuser">
       <label for="validationCustom01 " class="form-label ">Nombre</label>
       <input type="text" class="form-control" id="validationCustom01" placeholder="Completa tu nombre" required>
       <div class="valid-feedback">
@@ -132,7 +132,16 @@
         Looks good!
       </div>
     </div>
-    
+    <div class="col-md-9 formDatos">
+      <label for="validationCustomUsername" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+        <div class="invalid-feedback">
+          Please choose a username.
+        </div>
+      </div>
+    </div>
     <div class="col-md-4 formDatos tamuser">
       <label for="validationCustom03" class="form-label">Ciudad</label>
       <input type="text" class="form-control" id="validationCustom03" required>

@@ -392,7 +392,8 @@ align-items: center;
  background-color:$color4;
     border-radius: 100%;
     position: relative;
-    left: 80px;
+    left: 20%;
+    margin-bottom:30px;
       .logoUsuario5{
 @include tamanio(100%,100%);
 border-radius: 100%;
@@ -808,7 +809,9 @@ background-color: $color3;
  background-color:$color4;
     border-radius: 100%;
     position: relative;
-    left: 80px;
+    left: 20%;
+    margin-bottom:30px;
+ 
       .logoUsuario3{
 @include tamanio(100%,100%);
 border-radius: 100%;
