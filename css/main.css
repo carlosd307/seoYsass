@@ -638,6 +638,9 @@ variablesDeColor
   .bodyPages #hero .col3 .colp, .bodyPages #hero .col4 .colp {
     margin: 15px;
   }
+  .bodyPages #hero .col4 {
+    padding: 1px;
+  }
   .bodyPages #hero .card-img-top {
     width: 100%;
     height: 130px;
@@ -1072,6 +1075,9 @@ variablesDeColor
   }
   .bodyPages #hero .col1 .colp, .bodyPages #hero .col2 .colp {
     margin: 15px;
+  }
+  .bodyPages #hero .col2 {
+    padding: 1px;
   }
   .bodyPages #hero .card-img-top {
     width: 100%;
