@@ -1048,6 +1048,7 @@ color:$color1;
     footer {
       grid-area: pie;
       @include tamanio(100%,100%);
+      margin-top: 20px;
       background-color:$color1;
       color: $color2;
       text-align: center;
