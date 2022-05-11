@@ -185,8 +185,8 @@ variablesDeColor
     text-align: center;
     width: 100%;
     height: 10%;
-    position: fixed;
-    bottom: 0;
+    height: 100%;
+    position: relative;
   }
   #gridAreas footer .redes {
     padding-top: 20px;
@@ -586,8 +586,8 @@ variablesDeColor
     background-color: #E2A405;
     color: #4D4D4D;
     text-align: center;
-    position: fixed;
-    bottom: 0;
+    height: 100%;
+    position: relative;
   }
   #gridAreas footer .redes {
     padding-top: 20px;
@@ -1018,9 +1018,8 @@ variablesDeColor
     color: #4D4D4D;
     text-align: center;
     width: 100%;
-    height: 10%;
-    position: fixed;
-    bottom: 0;
+    height: 100%;
+    position: relative;
   }
   #gridAreas footer .redes {
     padding-top: 20px;
