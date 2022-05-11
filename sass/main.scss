@@ -660,7 +660,7 @@ color:$color1;
  
 .col4{
 @extend.col3;
-padding:1px;
+padding:0px;
 .rowflex4{
 @extend.rowflex3;
 }
@@ -1084,7 +1084,7 @@ color:$color1;
       }
    .col2{
  @extend.col1;
- padding:1px;
+ padding:0px;
 .rowflex2{
   @extend.rowflex;
 }
