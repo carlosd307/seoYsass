@@ -185,6 +185,7 @@ variablesDeColor
     text-align: center;
     width: 100%;
     height: 100%;
+    margin-top: 20px;
     position: relative;
     bottom: 0;
   }
@@ -580,9 +581,10 @@ variablesDeColor
     background-color: #E2A405;
   }
   #gridAreas footer {
-    width: 100%;
-    height: 100%;
     grid-area: pie;
+    width: 100%;
+    height: 70%;
+    margin-top: 100px;
     background-color: #E2A405;
     color: #4D4D4D;
     text-align: center;

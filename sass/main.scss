@@ -198,6 +198,7 @@ margin-top: 100%;
     color:  $color2;
    text-align: center;
     @include tamanio(100%,100%);
+    margin-top: 20px;
     position: relative;
     bottom: 0;
     .redes{
@@ -607,9 +608,10 @@ color:$color1;
           inicioFooter
 -------------------------------*/
      footer {
-      @include tamanio(100%,100%);
-        grid-area: pie;
-        background-color: $color1;
+      grid-area: pie;
+      @include tamanio(100%,70%);
+      margin-top: 100px;
+      background-color: $color1;
         color:  $color2;
         text-align: center;
        position: relative;
