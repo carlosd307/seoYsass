@@ -1055,6 +1055,7 @@ variablesDeColor
   .bodyPages #hero .col1, .bodyPages #hero .col2 {
     width: 1000px;
     height: 300px;
+    padding: 35px;
   }
   .bodyPages #hero .col1 .rowflex, .bodyPages #hero .col2 .rowflex, .bodyPages #hero .col2 .rowflex2 {
     display: flex;
@@ -1237,6 +1238,10 @@ variablesDeColor
 
   hr {
     color: #E2A405;
+  }
+
+  .p {
+    padding-left: 46px;
   }
 }
 /*finmediaQueriesDesktop*/

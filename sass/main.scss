@@ -1066,7 +1066,7 @@ color:$color1;
        padding-top: 100px;
       .col1{
         @include tamanio(1000px,300px);
-        
+        padding: 35px;
         .rowflex{
         display: flex;
         flex-direction: row;
@@ -1275,6 +1275,9 @@ color:$color1;
   }
 hr{
   color:$color1;
+}
+.p{
+  padding-left: 46px;
 }
 }
 /*finmediaQueriesDesktop*/
