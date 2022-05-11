@@ -432,6 +432,17 @@ background-color: $color3;
 
 }
 }
+.pagosPadre{
+  @include tamanio(100%,100%);
+ padding-left: 20px;
+
+}
+hr{
+color:$color1;
+}
+.pago{
+  margin-bottom: 50px;
+}
 }
 /*-------------------------------------------------------------------------
                                     tablet
@@ -846,6 +857,17 @@ padding-bottom: 90px;
 background-color: $color1;
 
 }
+}
+.pagosPadre{
+  @include tamanio(100%,100%);
+ padding-left: 30px;
+
+}
+hr{
+color:$color1;
+}
+.pago{
+  margin-bottom: 50px;
 }
 }
 /*----------------------------------------------------

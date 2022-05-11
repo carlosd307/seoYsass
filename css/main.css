@@ -395,6 +395,20 @@ variablesDeColor
     width: 100%;
     height: 25%;
   }
+
+  .pagosPadre {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+  }
+
+  hr {
+    color: #E2A405;
+  }
+
+  .pago {
+    margin-bottom: 50px;
+  }
 }
 /*-------------------------------------------------------------------------
                                     tablet
@@ -809,6 +823,20 @@ variablesDeColor
   }
   .formpageuser .botonsuscribiruser {
     background-color: #E2A405;
+  }
+
+  .pagosPadre {
+    width: 100%;
+    height: 100%;
+    padding-left: 30px;
+  }
+
+  hr {
+    color: #E2A405;
+  }
+
+  .pago {
+    margin-bottom: 50px;
   }
 }
 /*----------------------------------------------------
