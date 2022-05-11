@@ -592,6 +592,19 @@ variablesDeColor
   #gridAreas footer .redes {
     padding-top: 20px;
   }
+  #gridAreas .footerblog {
+    width: 100%;
+    height: 100%;
+    grid-area: pie;
+    background-color: #E2A405;
+    color: #4D4D4D;
+    text-align: center;
+    position: relative;
+    top: 1080px;
+  }
+  #gridAreas .footerblog .redes {
+    padding-top: 20px;
+  }
 
   /*----------------------------------------------------------------------------------------
                                     shop-Pages-Servicios-Tablet
@@ -1035,7 +1048,7 @@ variablesDeColor
   -------------------*/
   .bodyPages {
     width: 100%;
-    height: 170vh;
+    height: 100vh;
     background-color: whitesmoke;
     /*------------------------
               contenido
@@ -1052,6 +1065,19 @@ variablesDeColor
     /*finLateral/*
     /*finBodyPages*/
   }
+  .bodyPages .footerblog {
+    width: 100%;
+    height: 100%;
+    grid-area: pie;
+    background-color: #E2A405;
+    color: #4D4D4D;
+    text-align: center;
+    position: relative;
+    top: 1680px;
+  }
+  .bodyPages .footerblog .redes {
+    padding-top: 20px;
+  }
   .bodyPages #hero {
     grid-area: hero;
     padding-top: 100px;
@@ -1062,6 +1088,9 @@ variablesDeColor
     /*----------------------
               EXTEND
     -----------------------*/
+  }
+  .bodyPages #hero .p {
+    padding-left: 46px;
   }
   .bodyPages #hero .col1, .bodyPages #hero .col2 {
     width: 1000px;
@@ -1253,10 +1282,6 @@ variablesDeColor
 
   hr {
     color: #E2A405;
-  }
-
-  .p {
-    padding-left: 46px;
   }
 }
 /*finmediaQueriesDesktop*/

@@ -621,8 +621,19 @@ color:$color1;
 /*-----------------------
          finFooter
 ------------------------*/
-  
+.footerblog{
+  @include tamanio(100%,100%);
+  grid-area: pie;
+  background-color:$color1;
+  color:  $color2;
+ text-align: center;
+  position:relative;
+top:1080px;
+  .redes{
+    padding-top: 20px;
+  }
    }
+  }
 /*----------------------------------------------------------------------------------------
                                   shop-Pages-Servicios-Tablet
 ---------------------------------------------------------------------------------------**/
@@ -1056,7 +1067,7 @@ color:$color1;
             body
     -------------------*/
     .bodyPages {
-      @include tamanio(100%,170vh);
+      @include tamanio(100%,100vh);
       background-color: $color3;
 
   /*------------------------
@@ -1066,10 +1077,24 @@ color:$color1;
 /*----------------------
           MAPA
 -----------------------*/
-
+.footerblog{
+  @include tamanio(100%,100%);
+  grid-area: pie;
+  background-color:$color1;
+  color:  $color2;
+ text-align: center;
+  position:relative;
+top:1680px;
+  .redes{
+    padding-top: 20px;
+  }
+}
     #hero {
       grid-area: hero;
        padding-top: 100px;
+       .p{
+        padding-left: 46px;
+      }
       .col1{
         @include tamanio(1000px,300px);
         padding: 35px;
@@ -1284,8 +1309,6 @@ color:$color1;
 hr{
   color:$color1;
 }
-.p{
-  padding-left: 46px;
-}
+
 }
 /*finmediaQueriesDesktop*/
