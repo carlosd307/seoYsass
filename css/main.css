@@ -1102,6 +1102,7 @@ variablesDeColor
   .bodyPages #hero .tituloServicios {
     position: relative;
     left: 3%;
+    padding-left: 35px;
   }
   .bodyPages #hero .tituloPages {
     width: 30%;
