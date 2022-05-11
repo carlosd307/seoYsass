@@ -232,7 +232,9 @@ shopPages&ServiciosSmartphone-
         background-color: $color1;
         font-size: 14px;
         color: black;
+        
     }
+    .p{ padding: 50px;}
     .rowflex0{
       display: flex;
       flex-direction: column;
@@ -641,8 +643,10 @@ color:$color1;
 #hero {
   grid-area: hero;
    padding-top: 100px;
+   .p{ padding: 32px;}
   .col3{
     @include tamanio(1000px,300px);
+    padding: 18px;
   .rowflex3{
     display: flex;
     flex-direction: row;

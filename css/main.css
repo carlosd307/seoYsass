@@ -227,6 +227,9 @@ variablesDeColor
     font-size: 14px;
     color: black;
   }
+  .bodyPages #hero .p {
+    padding: 50px;
+  }
   .bodyPages #hero .rowflex0 {
     display: flex;
     flex-direction: column;
@@ -618,9 +621,13 @@ variablesDeColor
     grid-area: hero;
     padding-top: 100px;
   }
+  .bodyPages #hero .p {
+    padding: 32px;
+  }
   .bodyPages #hero .col3, .bodyPages #hero .col4 {
     width: 1000px;
     height: 300px;
+    padding: 18px;
   }
   .bodyPages #hero .col3 .rowflex3, .bodyPages #hero .col4 .rowflex3, .bodyPages #hero .col4 .rowflex4 {
     display: flex;
